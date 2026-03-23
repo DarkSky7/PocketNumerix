@@ -1,0 +1,47 @@
+Folio:  Set of assets and options
+
+One or more of:
+
+Delta
+Gamma
+Vega
+Assets:
+	Company			* indicates runtime element
+	Symbol			*
+	Number of shares 	*
+	Cost per share   	*
+	Purchase date    	*
+	Commission paid
+	Volatility    	   	*
+	Drift			*?
+
+	    One or more of:
+	    Dividend, date   **
+
+
+Bonds:
+	Issuer
+	Zero coupon bond - continuous interest rate
+	Coupon bond - coupon rate, coupon interval
+
+Call:
+	Underlying Asset (Ptr?)
+	Strike
+	Expiry
+	Price
+
+Put:
+	Underlying Asset (Ptr?)
+	Strike
+	Expiry
+	Price
+
+Today's Hedge View (one for each Call and Put expiry)
+
+Early Exercise Boundary (Put)
+
+Value At Risk
+
+Grid Control or Excel-OLE?
+
+Chart in Excel or native?
