@@ -1,0 +1,210 @@
+where to SetAsync() ?
+
+GetHttpResponse()
+ReceiveFile()
+-------------------------
+
+Exchange Feeds
+
+IQFeed $50 to start, $60/mo Real time; Equity Options $40/mo
+Non-professional:  Amex $8/mmo, NYSE $8/mo, NASDAQ $8/mo (incl. exchange fees)
+http://www.iqfeed.net/index.cfm?displayaction=data&section=fees
+
+Eoddata
+http://www.eoddata.com/Default.aspx	free end-of-day prices for a dozen exchanges
+http://www.eoddata.com/products/HistoricalData.aspx	historical data $25/5yrs/exchange
+
+Tick data, depth of market - NYSE-LIFFE, NYMEX, NYBOT, ... (ForEx, commodities?)
+http://www.zen-fire.com/pages/advantages/advantages.html
+
+connect to the database (postgres, k593G@sp27)
+---------------------
+ODBC tutorial, critique, many useful links
+http://www.anaesthetist.com/mnm/sql/odbc.htm
+
+Tony Bain column-oriented database commentator
+http://blog.tonybain.com/tony_bain/2009/08/vectorwise.html
+
+Data Warehousing with MySQL and Infobright
+http://dev.mysql.com/tech-resources/articles/datawarehousing_mysql_infobright.html
+---------------------
+NetCDF (common data form) Project at University Corp for Atmospheric Research (CO)
+http://www.unidata.ucar.edu/software/netcdf/	reads HDF5 and ~10 other formats 
+---------------------
+HDF5 - Hierarchical Data Format, C, C++, Fortran-90, Java
+http://www.hdfgroup.org/HDF5/
+http://www.hdfgroup.org/products/hdf5_tools/
+---------------------
+Thomson Data Feeds - 180 exchanges, <1ms latency, no prices
+http://thomsonreuters.com/products_services/financial/financial_products/event_driven_trading/data_feeds
+
+Thomson High Velocity Analytics
+http://thomsonreuters.com/products_services/financial/financial_products/quantitave_event_driven_trading/high_velocity_analytics
+---------------------
+lipqxx pages...
+http://pqxx.org/development/libpqxx/wiki
+http://pqxx.org/development/libpqxx/ticket/121
+http://pqxx.org/development/libpqxx/wiki/FaqTroubleshooting
+---------------------
+HTTP Tunneling... 
+1999 draft "Tunneling TCP based protocols through Web proxy servers":
+   http://www.web-cache.com/Writings/Internet-Drafts/draft-luotonen-web-proxy-tunneling-01.txt
+http://www.codeguru.com/cpp/i-n/internet/http/article.php/c6209/	HttpProxy_Src.zip in Chrome downloads
+http://www.codeproject.com/KB/IP/httptunneling.aspx
+
+Proxy servers...
+http://proxy.org/proxies_sorted.shtml			sorted by country
+http://www.publicproxyservers.com/proxy/list1.html	country, access time, uptime, ratings (1:100), ...
+http://www.proxy4free.com/page1.html			looks like the same list
+http://tools.rosinstrument.com/proxy/			bit rates of each server
+http://tools.rosinstrument.com/howto.htm
+http://jsbi.blogspot.com/2007/05/complete-list-of-proxy-servers-to.html
+---------------------
+Article on "Infobright, MonetDB and HadoopDB: Open source DBMS solutions"
+http://www.facebook.com/notes/surfliner-services-llc/infobright-monetdb-and-hadoopdb-open-source-dbms-solutions/138338125852
+Links to:  Vertica, Exasol, Netezza, Greenplum, Infobright, MMonetDB, Hadoop, HIve, HadoopDB
+
+Dan Abadi's home page at Yale...
+http://cs-www.cs.yale.edu/homes/dna/
+http://cs-www.cs.yale.edu/homes/dna/displaypubs.html  Abadi's publications
+http://db.cs.yale.edu/hadoopdb/hadoopdb.html
+http://cs-www.cs.yale.edu/homes/dna/papers/hstore-demo.pdf
+http://cs-www.cs.yale.edu/homes/dna/papers/oltpperf-sigmod08.pdf
+
+
+Analytics...
+LucidDB, MonetDB, Infobright, InfiniDB, VectorWise, (MySQL, PostgreSQL)
+
+licensing:
+  Community/permissive: PG, Cassandra, DerbyDB, CouchDB, HBase, Hadoop DB, SQLite
+  Community/reciprocal: Hypertable, drizzle, LucidDB, Firebird, MonetDB
+
+Distributed...
+Hadoop, HadoopDB, Drizzle, MongoDB, Cassadra, CouchDB, HBase, Hypertable
+
+http://www.xenomorph.com/	time series data management, no eval
+http://kx.com/			wall street favorite (since 2000), very expensive, 2hr eval
+
+http://kx.com/q/d/q.htm						Abridged Q language manual
+http://en.wikipedia.org/wiki/Q_%28programming_language%29	Q language examples
+
+Cassandra - distributed hash table originally developed by Facebook
+
+PG - competes with Oracle, Sybase, ... full SQL standard support
+
+Derby - Apache project, embedded Java relational DBMS w/2MB footprint. 
+	Previously distributed as IBM Cloudscape. It is currently distributed as Sun Java DB.
+	It has IBM DB2 SQL syntax.
+HBase - Apache license, column oriented DB written in Java
+
+Apache licensed Java - Hadoop, HBase, Derby
+Mozilla license - MonetDB
+GNU licensed C++ - Hypertable
+Document oriented storage - CouchDB, MongoDB
+
+Hadoop presentations...
+http://www.cloudera.com/hadoop-training-pig-introduction
+http://www.cloudera.com/hadoop-training-pig-tutorial
+http://www.cloudera.com/hadoop-training-mapreduce-hdfs
+---------------------
+http://finance.yahoo.com/	Links at bottom for Argentina, Australia, Hong Kong, ...
+
+NASDAQ Volume leaders: http://finance.yahoo.com/actives?e=o
+JAVA Sun Microsystems, Inc.
+QQQQ PowerShares Exchange-Traded Fun
+SNSS Sunesis Pharmaceuticals, Inc
+INTC Intel Corporation
+CSCO Cisco Systems, Inc.
+MSFT Microsoft Corporation
+ORCL Oracle Corporation
+DELL Dell Inc.
+ETFC E*TRADE Financial Corporation
+SCHW The Charles Schwab Corporation
+USUA UAL Corporation
+YHOO Yahoo! Inc.
+AAPL Apple Inc.
+JASO JA Solar Holdings, Co., Ltd.
+CMCSA Comcast Corporation
+LVLT Level 3 Communications, Inc.
+RIMM Research In Motion Limited
+FITB Fifth Third Bancorp
+AMAT Applied Materials, Inc.
+HBAN Huntington Bancshares Incorpora
+MRVL Marvel Technology Group Ltd
+CIEN Ciena Corporation
+BRCD Brocade Communications Systems
+QCOM Qualcomm Incorporated
+COMS 3COM Corporation
+
+AMEX volume leaders: http://finance.yahoo.com/actives?e=aq
+
+NYSE volume leaders: http://finance.yahoo.com/actives?e=nq
+C    CITIGROUP INC
+BAC  BK OF AMERICA CP
+XTO  XTO ENERGY INC
+XOM	EXXON MOBIL CP
+FNM	FANNIE MAE
+BMY	BRISTOL-MYERS SQUIBB
+PFE	PFIZER INC
+MOT	MOTOROLA INC
+FRE	FREDDIE M
+WFC	WELLS FARGO & CO NEW
+
+Most Actives...
+UK/Ireland's most avtives		http://uk.finance.yahoo.com/actives?e=ftas
+Canada (Toronto) volume leaders		http://ca.finance.yahoo.com/actives?e=to	
+New Zealand (NZSE) volume leaders	http://au.finance.yahoo.com/actives?e=NZ	in volume order
+Australia (ASX) Volume leaders:		http://au.finance.yahoo.com/actives?e=AX
+Boart (BLY.AX)				http://au.finance.yahoo.com/q?s=BLY.AX
+Color of links on /q?s=ZZZ pages indicates whether the link contains any data (e.g. options, historical prices),
+e.g. <a href="/q/op?s=BNS.TO" style="color:#aaaaaa">Options</a>
+	is a gray link :== links to pages with data have no style qualifier (indicating no options)
+
+Summary page for Citigroup:     	http://finance.yahoo.com/q?s=C
+Competitors to Citigroup:		http://finance.yahoo.com/q/co?s=C
+Options for Citigroup:			http://finance.yahoo.com/q/op?s=C
+Historical prices for Citigroup:	http://finance.yahoo.com/q/hp?s=C
+Components page	for Sun (JAVA)		http://finance.yahoo.com/q/ct?s=JAVA	lists indexes that include JAVA
+NASDAQ Computer Index (^IXK)		http://finance.yahoo.com/q/cp?s=^IXK	lists stocks in the index
+
+HP page contains link to download ALL HP prices to spreadsheet...
+Download Citibank hist. prices 2 spreadsheet:
+  http://ichart.finance.yahoo.com/table.csv?s=C&d=11&e=15&f=2009&g=d&a=0&b=3&c=1977&ignore=.csv
+Download SPY hist. prices 2 Spreadsheet:
+  http://ichart.finance.yahoo.com/table.csv?s=SPY&d=11&e=15&f=2009&g=d&a=0&b=29&c=1993&ignore=.csv
+
+download historical stock prices
+calculate volatility, cross-correlation, covariance, and time lags
+
+need list of stock symbols (from where?) and their market capitalization, maybe average trading volume
+
+remember yahoo competitors for potential leading signals given positive cross-correlations
+
+time lag adjusted Pearson's product-moment coefficient ?
+
+
+create profile
+{  issue, 
+}
+
+prologue process
+{  get historical prices for sample stocks into database (pull through optimalPortfolio)
+   compute GARCH volatilities for sample stocks
+}
+
+daily process
+{  download option chains for sample stocks
+   compute greeks, implied volatility, probability of closing in the money
+}
+
+monthly process
+{  sample stock prices at options expiry
+   compare predicted probability of closing in the money to observed probabilitites
+   tweak GARCH parameters to improve probabilities?
+}
+
+
+are volume, open interest leading indicators?
+
+Historical Stock Prices for Philip Morris International, Inc. (PM)
+http://ichart.finance.yahoo.com/table.csv?s=PM&d=10&e=16&f=2009&g=d&a=2&b=17&c=2008&ignore=.csv
