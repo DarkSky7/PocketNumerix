@@ -1,0 +1,10 @@
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: teomaagent1
+Disallow: /
+
+User-agent: directhit
+Disallow: /
+
+Crawl-delay: 20
