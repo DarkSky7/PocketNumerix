@@ -1,0 +1,49 @@
+Things to do:
+
+Current Position Dialog:
+
+1. Make it work without getting a KillFocus from Symbol.  Check.
+
+2. User can override nShares (keep track internally).  Not in this release!
+
+3. Why doesn't TotalSharesHeld CEdit show?
+	Maybe its the Current Position Box
+
+
+StockDialog:
+
+5. Set state of IncludeDividendsInReturn check box based on returned value from DividendsDialog.  Code implemented, but checkBox not visible.
+
+6. Values not being recovered from saved file.
+
+7. Drop down box not being added to?
+
+
+StockDividendsDialog:
+
+5. Dividend CheckBox states are not being loaded from previous state.
+
+6. Dates not being loaded in the pickers either.
+-----------------------------------------
+Completed Items...
+StockDividendsDialog:
+1. Change formatting of Dividend Amount to include only two decimal places.
+2. Set reasonable dates in the date pickers
+3. Try to get date pickers to show month, day only.  Doubtful...
+4. Scrunch pickers toward top so 'keyboard' doesn't cover any of the controls
+
+StockDialog:
+1. Make Volatility label visible.  Tried ungrouping...
+2. Make other static labels visible.  Tried ungrouping...
+	a. Position Value
+	b. Profit
+	c. Annualized Return
+3. Make result static text's visible.  Tried ungrouping...
+	a. Position Value
+	b. Profit
+	c. Annualized Return
+4. Make '%" static text label visible.  Tried ungrouping...
+
+6. Decide what to do about symbol selection and modification of the sharePrice and Volatility CEdit's.
+
+Keep track of whether symbol has changed from last KillFocus!
