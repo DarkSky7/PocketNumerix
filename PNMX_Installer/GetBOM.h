@@ -1,0 +1,1 @@
+DWORD WINAPI	GetBOM( void* pThreadCtx );
