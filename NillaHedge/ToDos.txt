@@ -1,0 +1,69 @@
+Look up "Working with Tap-and-Hold Menus" or "TrackPopupMenuEx" to see how to handle a popup
+
+BondDefinitionDialog...
+Imputed Yield doesn't work when there are 0 coupons, doesn't respond to changes in same
+Dialog is locking up when the coupon rate > 0 but there are 0 coupons
+
+OptionValueDialog...
+1) Compute Next Dividend Date
+
+StockValueDialog...
+1) Compute Next Dividend Date
+
+ShortRateEstimator ...
+1) Fix the trivariate normal integral computation (ams.org, incoming books at Daley)
+2) verify Geske-Johnson (Put) pricing
+3) rewrite CShortRateCalibration_f::getShortRate to use an exp( a*t + b ) model...
+4)
+
+OptionAnalyzerDialog...
+4) verify findSstar operation...
+
+Bonds...
+3) ??? maybe should reduce {imputed yield, profit, return} by coupon liability
+   on definition and evaluation dialogs
+
+Stocks...
+	Verify lastDivB4Date
+
+Options ...
+	Verify RollGeskeWaley
+	Verify amerValue (for a Put)
+	Verify impliedVolaility
+	Verify findSstar() somehow
+
+
+Global...
+	Verify findXgivenY()
+
+Stocks...
+4) rewrite curYield() to iterate toward a continuous yield rate (use findXgivenY ???)
+wrote fracYears, but aren't using it anywhere!!!
+
+Bonds...
+Don't upcase the 'symbol'?
+5) rewrite imputedYield using global (NillaHedge.cpp) findXgivenY() (done)
+-------------------------------------------------------------------
+BondDialog:
+2) Need to account for dayCounting in aggCpnCostBondsRet ?  Done
+Try selecting the coupons per year to show that its the current control (done)
+Change Coupon from $ to %.
+Tab order to include radio buttons
+
+BondDialog:Format/Echo Volatility back
+BondDialog:Format/Echo Coupon rate back
+Why is AmerVal and EuroVal the same????
+Is the exercise asymptote accurate for Calls?
+find the real Exercise Boundary (rather than the asymptote) ???
+Need a new COption::impliedVolatility(), Wilmott's is unstable!
+
+OptionAnalyzerDialog::updateControls does not properly set IDC_StrikePriceResult
+develop more sophisticated annual yield model in CStock::equivYield( void ) and aggDivCostReturn ???
+Access violation in posting the AnalyticalAssessmentDialog (this may be a costructor syntax problem) (fixed ???)
+Select all of Option Price in the OptionValueDialog when we transfer the focus from OptionSymbol (fixed???)
+StockSymbol not getting initial focus when StockDefinitionDialog is posted (fixed???)
+MainFrame posts of dialogs need to capture variables from both ValueDialogs (fixed???)
+initial dividend dates are not working in the StockDefinionDialog (fixed)
+Add function to OptionPositionDialog to format value of Options to three decimal places (fixed)
+See if similar function is in StockPositionDialog for Shares (okay)
+
