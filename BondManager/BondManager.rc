@@ -1,0 +1,1202 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BondManager.rc2""  // non-Microsoft eMbedded Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""            // Standard components\r\n"
+    "#include ""wceres.rc""              // WCE-specific components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_BondManager         ICON                    "res\\BondManager.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Cmdbar.bmp"
+IDB_STATE               BITMAP                  "res\\state.bmp"
+IDB_FOLDERS             BITMAP                  "res\\folders.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Close Database",              ID_FILE_CLOSE_DATABASE
+        MENUITEM "Open Database",               ID_FILE_OPEN_DATABASE
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Position List Options",       ID_CREATE_DISPLAY_PREFERENCES
+        MENUITEM "Confirmation Options",        ID_DEFINE_CONFIRM_SAVE_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Bonds",                      ID_DEFINE_BOND
+        MENUITEM SEPARATOR
+        MENUITEM "Positions",                   ID_CREATE_POSITION
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Positions Transcripts",       ID_TOOLS_VIEW_POSITION_TRANSCRIPT
+        MENUITEM "&Portfolio Navigator",        ID_TOOLS_PORTFOLIO_NAVIGATOR
+        MENUITEM SEPARATOR
+        MENUITEM "Rate Sensitivity Explorer",   ID_TOOLS_RATE_SENSITIVITY_EXPLORER
+        MENUITEM "&Bond Analyzer",              ID_TOOLS_BOND_ANALYZER
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "&About BondManager",          ID_APP_ABOUT
+    END
+END
+
+IDM_DOCLIST MENU 
+BEGIN
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About BondManager...",        ID_APP_ABOUT
+    END
+END
+
+IDR_PositionsPopup MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Delete",                      ID_POSITIONS_POPUP_DELETE
+        MENUITEM "Modify",                      ID_POSITIONS_POPUP_MODIFY
+    END
+    POPUP "Positions"
+    BEGIN
+        MENUITEM "Delete",                      ID_POSITIONS_POPUP_DELETE
+        MENUITEM "Modify",                      ID_POSITIONS_POPUP_MODIFY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_MAINFRAME RCDATA 
+BEGIN
+    0x0080, 0x0004, 0xfffe, 0x8081, 0x0004, 0x0018, 0x8083, 0x0000, 0x0000, 
+    0xfffe, 0x0080, 0x0004, 0x0018, 0x8005, 0x0080, 0x0001, 0xfffe, 0x8035, 
+    0x0004, 0x0018, 0x8034, 0x8035, 0x0002, 0xfffe, 0xe146, 0x0004, 0x0018, 
+    0x8080, 0x0000, 0x0003
+END
+
+IDM_DOCLIST RCDATA 
+BEGIN
+    0x006d, 0x0001, 0xfffe, 0x006c, 0x0004, 0x0018, 0x8080, 0x0000, 0x0000
+
+END
+
+IDR_PositionsPopup RCDATA 
+BEGIN
+    0x0099, 0x0002, 0xfffe, 0x8070, 0x0004, 0x0018, 0x8072, 0x0000, 0x0000, 
+    0xfffe, 0x8078, 0x0004, 0x0018, 0x8075, 0x0000, 0x0001
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_Delete_Definition,   VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_APP_EXIT,            VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AboutBox DIALOG  0, 0, 106, 111
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE 0x80000000L
+CAPTION "About BondManager"
+FONT 8, "System"
+BEGIN
+    LTEXT           "BondManager",IDC_ProductName,39,9,47,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005\n           PocketNumerix",IDC_Copyright,10,33,87,18
+    LTEXT           "Version 2.3",IDC_Version,39,18,38,8
+    ICON            IDI_BondManager,IDC_BondManager,8,9,20,20
+    LTEXT           "Written by:\n           Mike Landis",IDC_Author,10,81,87,18,NOT WS_GROUP
+    CTEXT           "All rights reserved.",IDC_RightsReserved,0,56,104,10
+END
+
+IDD_PositionsDialog DIALOG  0, 0, 140, 154
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Positions"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_Symbol,32,1,105,71,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_PurchaseDate,"SysDateTimePick32",WS_TABSTOP,83,14,54,11
+    EDITTEXT        IDC_Units,18,34,50,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TotalCost,70,34,67,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Note,22,47,115,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Enter",IDC_Enter,1,61,28,10
+    PUSHBUTTON      "Modify",IDC_Modify,1,143,33,10
+    PUSHBUTTON      "Close",IDC_Close,53,143,33,10
+    PUSHBUTTON      "Delete",IDC_Delete,104,143,33,10
+    RTEXT           "Note:",IDC_NoteLabel,2,49,19,8,NOT WS_GROUP
+    LTEXT           "Active Positions...",IDC_ActivePositions,33,62,58,8
+    RTEXT           "# Bonds",IDC_UnitsLabel,29,26,28,8,NOT WS_GROUP
+    RTEXT           "Total Cost",IDC_TotalCostLabel,86,26,34,8,NOT WS_GROUP
+    RTEXT           "Purchased",IDC_PurchaseDateLabel,44,16,35,8,NOT WS_GROUP
+    CONTROL         "List1",IDC_PositionsList,"SysListView32",LVS_REPORT | LVS_NOLABELWRAP | WS_BORDER | WS_TABSTOP,0,71,138,71
+    CONTROL         "Bond ID",IDC_BondIDLabel,"Static",SS_LEFTNOWORDWRAP,3,3,26,8
+END
+
+IDD_BondDefinitionDialog DIALOG  0, 0, 139, 152
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bond Definition"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_BondSymbol,4,11,89,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_MarketPrice,97,11,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_IncepDate,"SysDateTimePick32",WS_TABSTOP,39,25,55,11
+    CONTROL         "DateTimePicker1",IDC_MaturityDate,"SysDateTimePick32",WS_TABSTOP,39,38,55,11
+    EDITTEXT        IDC_ParValue,96,34,38,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CouponRate,65,55,31,12,ES_RIGHT | ES_AUTOHSCROLL
+    LISTBOX         IDC_CouponsPerYear,106,57,28,12,NOT LBS_NOTIFY | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_Desc,25,69,109,12,ES_AUTOHSCROLL
+    CONTROL         "Actual/Actual (T-Bonds/Notes)",IDC_RadioActualActual,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,90,115,10
+    CONTROL         "Actual/360 (Deposits/Indicies)",IDC_RadioActual_360,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,99,114,10
+    CONTROL         "30/360 (Corp/Agency/MtgBkd)",IDC_Radio30_360,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,108,115,10
+    RTEXT           "Market Price",IDC_MarketPriceLabel,92,2,42,8,NOT WS_GROUP
+    RTEXT           "Bond Identifier",IDC_BondSymbolLabel,6,2,48,8,NOT WS_GROUP
+    RTEXT           "0.000",IDC_CurrentYieldResult,70,122,48,8
+    LTEXT           "Current Yield",IDC_CurrentYieldLabel,6,122,43,8
+    GROUPBOX        "Day Counting",IDC_DayCountingBox,5,82,129,38,WS_GROUP
+    RTEXT           "Coupon Rate (%)",IDC_CouponRateLabel,4,56,58,8
+    RTEXT           "Maturity",IDC_MaturityLabel,8,39,27,8
+    CTEXT           "Par Value",IDC_ParValueLabel,97,25,37,8
+    RTEXT           "0.000",IDC_YieldToMaturityResult,70,130,48,8
+    LTEXT           "Yield to Maturity",IDC_YieldToMaturityLabel,6,130,54,8
+    RTEXT           "%",IDC_PercentSign,119,122,10,8
+    RTEXT           "%",IDC_PercentSign2,119,130,10,8
+    LTEXT           "Macaulay Duration",IDC_MacaulayDurationLabel,6,138,61,8
+    RTEXT           "0.000",IDC_MacaulayDurationResult,70,138,48,8
+    RTEXT           "Inception",IDC_InceptionLabel,4,26,31,8
+    CTEXT           "Cpns/Yr",IDC_CouponsPerYearLabel,106,48,27,8
+    RTEXT           "Desc:",IDC_DescLabel,4,70,19,8,NOT WS_GROUP
+END
+
+IDD_StrategyExplorer DIALOG  0, 0, 139, 156
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Strategy Explorer"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_Strategy,33,0,81,147,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_Option1Qty,6,21,19,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_BuyOption1,31,23,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_SellOption1,41,23,10,9,WS_TABSTOP
+    EDITTEXT        IDC_Option1Cost,56,21,23,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_Option1Put,86,23,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_Option1Call,96,23,10,9,WS_TABSTOP
+    EDITTEXT        IDC_Option1Strike,111,21,22,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Option2Qty,6,33,19,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_BuyOption2,31,35,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_SellOption2,41,35,10,9,WS_TABSTOP
+    EDITTEXT        IDC_Option2Cost,56,33,23,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_Option2Put,86,34,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_Option2Call,96,34,10,9,WS_TABSTOP
+    EDITTEXT        IDC_Option2Strike,111,33,22,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Option3Qty,6,45,19,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_BuyOption3,31,47,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_SellOption3,41,47,10,9,WS_TABSTOP
+    EDITTEXT        IDC_Option3Cost,56,45,23,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_Option3Put,86,46,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_Option3Call,96,46,10,9,WS_TABSTOP
+    EDITTEXT        IDC_Option3Strike,111,45,22,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_StockQty,6,57,19,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_BuyStock,31,59,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_SellStock,41,59,10,9,WS_TABSTOP
+    EDITTEXT        IDC_StockPrice,56,57,27,12,ES_RIGHT | ES_AUTOHSCROLL
+    CTEXT           "Stock Price",IDC_StockPriceLabel,86,59,37,8
+    CTEXT           "Cost",IDC_CostLabel,60,13,15,8
+    CTEXT           "Strategy",IDC_StrategyLabel,3,1,28,8
+    LTEXT           "Buy/Sell",IDC_BuySellLabel,27,13,26,8
+    CTEXT           "Qty",IDC_QtyLabel,8,12,13,8
+    LTEXT           "Put/Call",IDC_PutCallLabel,83,13,26,8
+    CTEXT           "Strike",IDC_StrikeLabel,113,13,19,8
+END
+
+IDD_OptionDefinitionDialog DIALOG  0, 0, 139, 155
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Option Definition"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_OptionSymbol,5,11,85,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_OptionPrice,96,11,38,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "Call",IDC_CallRadio,4,26,28,10,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "Put",IDC_PutRadio,4,35,26,10,WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_StrikePrice,40,33,36,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_ExpiryDate,"SysDateTimePick32",WS_TABSTOP,80,34,54,11
+    COMBOBOX        IDC_StockSymbol,62,47,72,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_Desc,24,60,110,12,ES_AUTOHSCROLL
+    CTEXT           "Expiry",IDC_ExpiryLabel,91,24,21,8
+    CTEXT           "Strike Price",IDC_StrikePriceLabel,38,24,38,8
+    RTEXT           "Underlying Stock",IDC_UnderlyingSymbolLabel,4,49,55,8
+    RTEXT           "Option Symbol",IDC_OptionSymbolLabel,7,1,48,8,NOT WS_GROUP
+    RTEXT           "Desc:",IDC_DescLabel,3,62,19,8,NOT WS_GROUP
+    RTEXT           "Market Price",IDC_MarketPriceLabel,91,1,42,8
+    LTEXT           "Implied Volatility",IDC_ImpliedVolatilityLabel,9,84,55,8
+    RTEXT           "",IDC_ImpliedVolatilityResult,89,84,38,8
+    LTEXT           "Elasticity",IDC_OmegaLabel,9,141,29,8
+    RTEXT           "",IDC_ElasticityResult,43,141,25,8
+    LTEXT           "p( ITM )",IDC_pITMLabel,73,141,28,8
+    RTEXT           "",IDC_pITMResult,104,141,26,8
+    LTEXT           "Delta",IDC_DeltaLabel,9,111,18,8
+    LTEXT           "Gamma",IDC_GammaLabel,9,119,26,8
+    LTEXT           "Vega",IDC_VegaLabel,73,127,18,8
+    LTEXT           "Theta",IDC_ThetaLabel,9,127,20,8
+    RTEXT           "",IDC_ThetaResult,37,127,31,8
+    RTEXT           "",IDC_DeltaResult,39,111,29,8
+    RTEXT           "",IDC_GammaResult,39,119,29,8
+    RTEXT           "",IDC_VegaResult,99,127,29,8
+    RTEXT           "",IDC_RhoRresult,97,111,31,8
+    LTEXT           "Rho(r)",IDC_RhoRLabel,73,111,22,8
+    RTEXT           "",IDC_RhoDresult,97,119,31,8
+    LTEXT           "Rho(D)",IDC_RhoDLabel,73,119,24,8
+    GROUPBOX        "Black-Scholes Greeks",IDC_GreeksBox,4,103,129,36
+    LTEXT           "Black-Scholes Value",IDC_BlackScholesLabel,9,75,66,8
+    RTEXT           "",IDC_BlackScholesResult,81,75,46,8
+    LTEXT           "iV Pricing Error",IDC_iVPricingErrorLabel,9,93,55,8
+    RTEXT           "",IDC_IvPricingErrorResult,89,93,38,8
+END
+
+IDD_YieldCurveDialog DIALOG  0, 0, 139, 152
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Yield Curve Fitter"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_3moYield,34,11,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_6moYield,96,11,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_2yrYield,32,46,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_3yrYield,32,58,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_5yrYield,32,70,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_10yrYield,32,82,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_30yrYield,32,94,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_1yrYield,96,46,32,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_7yrYield,96,58,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_15yrYield,96,70,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_20yrYield,96,82,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_25yrYield,96,94,32,12,ES_CENTER | ES_AUTOHSCROLL
+    RTEXT           "3 mo.",IDC_3moLabel,11,13,20,8
+    RTEXT           "6 mo.",IDC_6moLabel,73,13,20,8
+    RTEXT           "1 yr.",IDC_1yrLabel,77,47,16,8
+    RTEXT           "2 yr.",IDC_2yrLabel,13,47,16,8
+    RTEXT           "3 yr.",IDC_3yrLabel,13,59,16,8
+    RTEXT           "5 yr.",IDC_5yrLabel,13,71,16,8
+    RTEXT           "7 yr.",IDC_7yrLabel,77,59,16,8
+    RTEXT           "10 yr.",IDC_10yrLabel,9,83,20,8
+    RTEXT           "15 yr.",IDC_15yrLabel,73,71,20,8
+    RTEXT           "30 yr.",IDC_30yrLabel,9,95,20,8
+    RTEXT           "0.000",IDC_RiskFreeRateResult,84,109,33,8
+    RTEXT           "20 yr.",IDC_20yrLabel,73,83,20,8
+    RTEXT           "25 yr.",IDC_25yrLabel,73,95,20,8
+    GROUPBOX        "U. S. Treasuries --> Spot Rate",IDC_USTreasuriesBox,4,2,130,24
+    LTEXT           "Additional U.S. Treasuries",IDC_AdditionalRatesLabel,8,28,90,8
+    LTEXT           "Spot (Risk Free) Rate",IDC_SpotRateLabel,8,109,71,8
+    RTEXT           "and Comparable Yields",IDC_ComparableYieldsLabel,45,36,85,8
+    LTEXT           "%",IDC_PercentLabel,121,109,10,8
+    LTEXT           "Assumes a 'normal' yield curve.",IDC_AssumptionStatic,10,135,118,8,NOT WS_GROUP
+END
+
+IDD_StockDefinitionDialog DIALOG  0, 0, 139, 152
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stock Definition"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_StockSymbol,3,9,92,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_Volatility,70,94,23,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MarketPrice,98,9,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Desc,25,21,110,12,ES_AUTOHSCROLL
+    CONTROL         "Q1",IDC_Q1ExDivDateCheck,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,45,25,10
+    CONTROL         "DateTimePicker1",IDC_Q1DividendDatePicker,
+                    "SysDateTimePick32",WS_TABSTOP,39,44,54,11
+    EDITTEXT        IDC_Q1Dividend,99,43,29,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "Q2",IDC_Q2ExDivDateCheck,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,57,25,10
+    CONTROL         "DateTimePicker1",IDC_Q2DividendDatePicker,
+                    "SysDateTimePick32",WS_TABSTOP,39,56,54,11
+    EDITTEXT        IDC_Q2Dividend,99,55,29,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "Q3",IDC_Q3ExDivDateCheck,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,69,25,10
+    CONTROL         "DateTimePicker1",IDC_Q3DividendDatePicker,
+                    "SysDateTimePick32",WS_TABSTOP,39,68,54,11
+    EDITTEXT        IDC_Q3Dividend,99,67,29,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "Q4",IDC_Q4ExDivDateCheck,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,81,25,10
+    CONTROL         "DateTimePicker1",IDC_Q4DividendDatePicker,
+                    "SysDateTimePick32",WS_TABSTOP,39,80,54,11
+    EDITTEXT        IDC_Q4Dividend,99,79,29,12,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "Stock Symbol",IDC_StockSymbolLabel,20,0,45,8,NOT WS_GROUP
+    RTEXT           "Desc:",IDC_DescLabel,3,23,19,8,NOT WS_GROUP
+    RTEXT           "sigma",IDC_VolatilityLabel,50,96,19,8
+    RTEXT           "Dividend",IDC_DividendLabel,99,34,28,8
+    RTEXT           "Ex-Dividend Date",IDC_ExDividendDateLabel,37,34,56,8
+    RTEXT           "Market Price",IDC_MarketPriceLabel,93,0,42,8
+    RTEXT           "0.000",IDC_CurrentYieldResult,81,109,39,8
+    RTEXT           "Current Yield",IDC_EquivalentYieldLabel,3,109,43,8
+    RTEXT           "%",IDC_PercentSign,120,109,10,8
+    EDITTEXT        IDC_Mu,16,94,31,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Beta,112,94,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "mu",IDC_MuLabel,2,96,13,8
+    RTEXT           "beta",IDC_BetaLabel,95,96,16,8
+END
+
+IDD_ClosePositionDialog DIALOG  0, 0, 139, 151
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Close Position"
+FONT 8, "System"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_ClosingDate,"SysDateTimePick32",WS_TABSTOP,5,14,56,11
+    EDITTEXT        IDC_NetProceeds,68,13,63,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ClosingNote,5,39,128,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,18,58,44,11
+    RTEXT           "Net Proceeds",IDC_NetProceedsLabel,77,4,44,8,NOT WS_GROUP
+    RTEXT           "Closing Date",IDC_SoldDateLabel,7,5,42,8,NOT WS_GROUP
+    RTEXT           "Closing Note",IDC_ClosingNoteLabel,3,29,42,8,NOT WS_GROUP
+    LTEXT           "CAUTION:  You are about to close an active position.   If you approve, the position will be permanently deleted from the active list.  The resulting transaction will be not be modifiable.",IDC_Warning,11,77,116,51
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,75,58,44,11
+END
+
+IDD_OptionAnalyzerDialog DIALOG  0, 0, 139, 154
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Option Analyzer"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_OptionSymbol,4,11,86,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_OptionPrice,94,11,39,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Volatility,56,42,33,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_StockPrice,93,42,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RiskFreeRate,105,55,28,12,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "Option Symbol",IDC_OptionSymbolLabel,6,1,48,8
+    RTEXT           "Option Price",IDC_OptionPriceLabel,94,1,40,8
+    LTEXT           "Strike",IDC_StrikePriceResult,5,43,46,8
+    LTEXT           "Put | Call @",IDC_PutCallResult,5,34,40,8
+    LTEXT           "25Dec2000",IDC_ExpiryResult,5,25,46,8
+    CTEXT           "-- Underlying Stock --",IDC_StockNameLabel,57,25,74,8
+    RTEXT           "RF %",IDC_RiskFreeRateLabel,84,57,19,8
+    LTEXT           "Volatility",IDC_VolatilityLabel,60,33,28,8
+    LTEXT           "Implied Volatility",IDC_ImpliedVolatilityLabel,9,78,55,8
+    RTEXT           "",IDC_ImpliedVolatilityResult,89,78,38,8
+    CTEXT           "Price",IDC_PriceLabel,106,33,17,8
+    LTEXT           "Elasticity",IDC_OmegaLabel,9,139,29,8
+    RTEXT           "",IDC_ElasticityResult,43,139,25,8
+    LTEXT           "p( ITM )",IDC_pITMLabel,73,139,28,8
+    RTEXT           "",IDC_pITMResult,104,139,26,8
+    LTEXT           "Delta",IDC_DeltaLabel,9,107,18,8
+    LTEXT           "Gamma",IDC_GammaLabel,9,116,26,8
+    LTEXT           "Vega",IDC_VegaLabel,73,125,18,8
+    LTEXT           "Theta",IDC_ThetaLabel,9,125,20,8
+    RTEXT           "",IDC_ThetaResult,37,125,31,8
+    RTEXT           "",IDC_DeltaResult,39,107,29,8
+    RTEXT           "",IDC_GammaResult,39,116,29,8
+    RTEXT           "",IDC_VegaResult,101,125,29,8
+    RTEXT           "",IDC_RhoRresult,99,107,31,8
+    LTEXT           "Rho(r)",IDC_RhoRLabel,73,107,22,8
+    RTEXT           "",IDC_RhoDresult,99,116,31,8
+    LTEXT           "Rho(D)",IDC_RhoDLabel,73,116,24,8
+    GROUPBOX        "Black-Scholes Greeks",IDC_GreeksBox,4,98,129,39
+    LTEXT           "Black-Scholes Value",IDC_BlackScholesLabel,9,69,66,8
+    RTEXT           "",IDC_BlackScholesResult,81,69,46,8
+    LTEXT           "iV Pricing Error",IDC_iVPricingErrorLabel,9,87,55,8
+    RTEXT           "",IDC_IvPricingErrorResult,89,87,38,8
+    CONTROL         "DateTimePicker1",IDC_EvalDate,"SysDateTimePick32",WS_TABSTOP,22,55,54,11
+    RTEXT           "Eval",IDC_EvalDateLabel,5,56,14,8,NOT WS_GROUP
+END
+
+IDD_PortfolioNavigatorDialog DIALOG  0, 0, 139, 156
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Portfolio Navigator"
+FONT 8, "System"
+BEGIN
+    CONTROL         "List1",IDC_PositionsList,"SysListView32",LVS_REPORT | LVS_NOLABELWRAP | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,1,1,136,152
+END
+
+IDD_PositionListDisplayOptions DIALOG  0, 0, 139, 152
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Position List Display Options"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Purchase Date",IDC_PurchaseDate,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,30,104,10
+    CONTROL         "Number of Bonds",IDC_NumUnits,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,40,101,9
+    CONTROL         "Initial Cost",IDC_InitialCost,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,50,100,9
+    CONTROL         "Market Value",IDC_MarketValue,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,60,101,9
+    CONTROL         "Capital Gain",IDC_CapitalGain,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,70,103,9
+    CONTROL         "Coupon Income",IDC_AggregateIncome,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,80,100,9
+    CONTROL         "Note",IDC_Note,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,111,100,9
+    CONTROL         "",IDC_PurchaseDateOverview,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,30,10,9
+    LTEXT           "Positions Dialog",IDC_DefinitionStatic,8,11,46,17
+    RTEXT           "Portfolio Navigator",IDC_OverviewStatic,78,11,53,16
+    CONTROL         "",IDC_NumUnitsOverview,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,40,9,9
+    CONTROL         "",IDC_InitialCostOverview,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,50,10,10
+    CONTROL         "",IDC_MarketValueOverview,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,60,12,9
+    CONTROL         "",IDC_CapitalGainOverview,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,70,11,9
+    CONTROL         "",IDC_AggregateIncomeOverview,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,80,10,10
+    CONTROL         "",IDC_NoteOverview,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,111,11,9
+    CONTROL         "Net Gain (CG + CI)",IDC_NetGain,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,90,98,9
+    CONTROL         "",IDC_NetGainOverview,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,90,11,10
+    CONTROL         "% Yield (NG+CI) / Cost",IDC_AnnualizedNetGain,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,100,104,10
+    CONTROL         "",IDC_AnnualizedNetGainOverview,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,100,12,10
+    CONTROL         "",IDC_InitiallySuppressPositions,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,120,11,10
+    RTEXT           "Initially Hide Positions",IDC_InitiallySuppressPositionsStatic,24,120,93,8
+    GROUPBOX        "Positions List Display Options",IDC_PositionListDisplayOptionsBox,3,2,132,144
+END
+
+IDD_BondAnalyzerDialog DIALOG  0, 0, 139, 159
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bond Analyzer"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_BondSymbol,3,10,89,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_MarketPrice,97,10,38,12,ES_RIGHT | ES_AUTOHSCROLL
+    COMBOBOX        IDC_DeltaYTM,40,75,31,73,CBS_DROPDOWN | CBS_OWNERDRAWFIXED | CBS_AUTOHSCROLL | CBS_HASSTRINGS | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_CouponStartDate,"SysDateTimePick32",WS_TABSTOP,79,108,55,11
+    CONTROL         "DateTimePicker1",IDC_CouponEndDate,"SysDateTimePick32",WS_TABSTOP,79,120,55,11
+    RTEXT           "Market Price",IDC_MarketPriceLabel,93,1,42,8,NOT WS_GROUP
+    LTEXT           "Bond Identifier",IDC_BondSymbolLabel,6,1,73,8,NOT WS_GROUP
+    RTEXT           "0.000",IDC_CurrentYieldResult,72,24,48,8
+    LTEXT           "Current Yield",IDC_CurrentYieldLabel,7,24,43,8
+    RTEXT           "0.000",IDC_YieldToMaturityResult,72,32,48,8
+    LTEXT           "Yield To Maturity",IDC_YieldToMaturityLabel,7,32,56,8
+    RTEXT           "%",IDC_PercentSign,121,24,10,8
+    RTEXT           "%",IDC_PercentSign2,121,32,10,8
+    LTEXT           "Macaulay Duration",IDC_MacaulayDurationLabel,7,40,61,8
+    RTEXT           "0.000",IDC_MacaulayDurationResult,72,40,48,8
+    CONTROL         "Modified Duration",IDC_ModifiedDurationLabel,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,7,59,57,8
+    RTEXT           "0.000",IDC_ModifiedDurationResult,80,59,51,8
+    LTEXT           "Convexity",IDC_ConvexityLabel,7,67,41,8
+    RTEXT           "0.000",IDC_ConvexityResult,87,67,44,8
+    LTEXT           "Imputed Market Value",IDC_ImputedMktPriceLabel,7,88,71,8
+    RTEXT           "0.000",IDC_ImputedMktPriceResult,80,88,51,8
+    LTEXT           "From",IDC_CouponStartDateStatic,60,110,17,8
+    LTEXT           "Present Value Coupons",IDC_PresentValueCouponStatic,7,132,75,8
+    RTEXT           "0.000",IDC_PresentValueCouponResult,88,132,43,8
+    LTEXT           "To",IDC_CouponEndDateStatic,67,121,10,8
+    LTEXT           "n Cpns/Yr",IDC_CouponsPerYear,7,111,36,8
+    LTEXT           "@ 0.000 %",IDC_CouponRate,7,121,41,8
+    LTEXT           "Present Value Par",IDC_PresentValueParStatic,7,141,58,8
+    RTEXT           "0.000",IDC_PresentValueParResult,88,140,43,8
+    GROUPBOX        "What-if YTM Discount",IDC_CouponCalculatorBox,2,101,134,51
+    RTEXT           "0.000",IDC_WhatIfYTMResult,95,78,27,8
+    RTEXT           "%",IDC_PercentSign3,122,78,10,8
+    CONTROL         "DeltaYTM",IDC_DeltaYTMLabel,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,7,77,31,8
+    LTEXT           "%  ->",IDC_ArrowLabel,73,77,20,8
+    GROUPBOX        "Interest Rate Sensitivity",IDC_InterestRateSensitivityBox,2,50,134,50,WS_GROUP
+END
+
+IDD_ConfirmSavePreferencesDialog DIALOG  0, 0, 137, 149
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirmation Preferences"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Bond Definition - change symbol",IDC_DefinitionDialogChangeSymbolVerify,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,44,118,10
+    CONTROL         "BondAnalyzer - close",IDC_AnalyzerDialogCloseVerify,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,34,93,10
+    CONTROL         "BondAnalyzer - change symbol",IDC_AnalyzerDialogChangeSymbolVerify,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,24,114,10
+    CONTROL         "Bond Definition - close",IDC_DefinitionDialogCloseVerify,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,54,95,10
+    CONTROL         "Positions Dialog - Delete position",IDC_PositionsDialogDeletePositionVerify,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,80,121,10
+    CONTROL         "Positions Dialog - Modify position",IDC_PositionsDialogModifyPositionVerify,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,90,123,10
+    GROUPBOX        "Updating Bond Definitions",IDC_DefinitionUpdateBox,3,13,130,54
+    GROUPBOX        "Deleting/Modifying Active Positions",IDC_Positions,3,69,130,34
+    LTEXT           "Require confirmation before...",IDC_RequireConirmationPreface,3,3,124,8
+END
+
+IDD_PositionsTranscripts DIALOG  0, 0, 139, 157
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Positions Transcripts"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_YearList,42,1,35,76,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PositionsTranscript,1,14,136,139,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "Save Transcript",IDC_SaveTranscript,79,2,58,10
+    LTEXT           "Year Closed",IDC_YearStatic,2,3,40,8
+END
+
+IDD_OptionChainDialog DIALOG  0, 0, 140, 155
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Option Chain Dialog"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_StockSymbol,47,1,63,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        IDC_Expiration,105,14,32,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "List1",IDC_OptionsList,"SysListView32",LVS_REPORT | LVS_NOLABELWRAP | WS_BORDER | WS_TABSTOP,0,26,138,116
+    PUSHBUTTON      "Save to DB",IDC_Save,94,143,43,10
+    CTEXT           "Expiry",IDC_ExpiryLabel,83,14,21,8
+    CONTROL         "Stock Symbol",IDC_StockSymbolLabel,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,2,1,43,8
+    LTEXT           "",IDC_CompanyNameResult,2,17,74,8
+    LTEXT           "",IDC_StockPriceResult,2,9,45,8
+    PUSHBUTTON      "Fetch",IDC_Fetch,112,2,24,10
+    LTEXT           "",IDC_StatusResult,2,143,84,8
+END
+
+IDD_HedgeExplorer DIALOG  0, 0, 139, 158
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hedge Explorer"
+FONT 8, "System"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_EvalDate,"SysDateTimePick32",WS_TABSTOP,67,0,54,11
+    EDITTEXT        IDC_StockQty,2,11,22,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_BuyStock,26,13,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_SellStock,36,13,10,9,WS_TABSTOP
+    COMBOBOX        IDC_StockSymbol,47,11,74,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_Option1Qty,2,23,22,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_BuyOption1,26,25,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_SellOption1,36,25,10,9,WS_TABSTOP
+    COMBOBOX        IDC_Option1Symbol,47,23,74,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_Option2Qty,2,35,22,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_BuyOption2,26,37,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_SellOption2,36,37,10,9,WS_TABSTOP
+    COMBOBOX        IDC_Option2Symbol,47,35,74,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_Option3Qty,2,47,22,12,ES_RIGHT | ES_AUTOHSCROLL
+    RADIOBUTTON     "",IDC_BuyOption3,26,49,9,9,WS_TABSTOP
+    RADIOBUTTON     "",IDC_SellOption3,36,49,10,9,WS_TABSTOP
+    COMBOBOX        IDC_Option3Symbol,47,47,74,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_StockPrice,16,59,31,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Volatility,48,59,23,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RiskFreeRate,113,59,23,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Buy/Sell",IDC_BuySellLabel,22,2,26,8
+    CTEXT           "Qty",IDC_QtyLabel,5,2,13,8
+    RTEXT           "Eval",IDC_EvalDateLabel,52,2,14,8,NOT WS_GROUP
+    LTEXT           "Stk",IDC_UnderlyingSymbolLabel,124,14,11,8
+    LTEXT           "O1",IDC_Option1SymbolLabel,124,25,10,8,NOT WS_GROUP
+    LTEXT           "O2",IDC_Option2SymbolLabel,124,37,10,8,NOT WS_GROUP
+    LTEXT           "O3",IDC_Option3SymbolLabel,124,49,10,8,NOT WS_GROUP
+    LTEXT           "Sigma",IDC_VolatilityLabel,72,61,20,8
+    LTEXT           "Stk$",IDC_StockPriceLabel,1,61,15,8
+    RTEXT           "RF%",IDC_RiskFreeRateLabel,95,61,17,8
+END
+
+IDD_RateSensitiityExplorer DIALOG  0, 0, 146, 161
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_Symbol1,44,11,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Symbol2,44,23,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Symbol3,44,35,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Symbol4,44,47,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_Check1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,13,16,10
+    CONTROL         "",IDC_Check2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,25,16,10
+    CONTROL         "",IDC_Check3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,37,16,10
+    CONTROL         "",IDC_Check4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,49,16,9
+    CONTROL         "Portfolio",IDC_Portfolio,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,1,50,43,10
+    EDITTEXT        IDC_DeltaLow,10,23,29,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DeltaHigh,10,36,29,12,ES_RIGHT | ES_AUTOHSCROLL
+    CTEXT           "Delta YTM\nRange (%)",IDC_DeltaYTMLabel,4,5,38,17,NOT WS_GROUP
+    CTEXT           "+",IDC_PlusLabel,1,37,10,8,NOT WS_GROUP
+    CTEXT           "-",IDC_MinusLabel,1,25,10,8,NOT WS_GROUP
+    CTEXT           "Bond Identifiers",IDC_BondIdentifiersLabel,54,2,52,8,NOT WS_GROUP
+END
+
+IDD_TimeDecayExplorer DIALOG  0, 0, 145, 158
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Time Decay Explorer"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_Symbol1,44,11,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Symbol2,44,23,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Symbol3,44,35,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Symbol4,44,47,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Portfolio",IDC_Portfolio,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,1,50,43,10
+    CONTROL         "",IDC_Check1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,13,16,10
+    CONTROL         "",IDC_Check2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,25,16,10
+    CONTROL         "",IDC_Check3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,37,16,10
+    CONTROL         "",IDC_Check4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,49,16,9
+    EDITTEXT        IDC_RiskFreeRate,2,11,36,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_EndDate,"SysDateTimePick32",WS_TABSTOP,70,0,55,11
+    CTEXT           "Risk Free %",IDC_RiskFreeRateLabel,1,2,40,8,NOT WS_GROUP
+    RTEXT           "Option | Symbols |",IDC_SymbolLabel,9,24,34,16,NOT WS_GROUP
+    CONTROL         "End",IDC_EndDateLabel,"Static",SS_LEFTNOWORDWRAP,56,2,13,8
+    CONTROL         "Pure B-S",IDC_PureBS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,1,41,43,10
+END
+
+IDD_VolatilityExplorer DIALOG  0, 0, 146, 161
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Volatility Explorer"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_Symbol1,43,11,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Symbol2,43,23,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Symbol3,43,35,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Symbol4,43,47,82,96,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_Check1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,13,16,10
+    CONTROL         "",IDC_Check2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,25,16,10
+    CONTROL         "",IDC_Check3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,37,16,10
+    CONTROL         "",IDC_Check4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,49,16,9
+    CONTROL         "Portfolio",IDC_Portfolio,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,1,50,43,10
+    EDITTEXT        IDC_RiskFreeRate,1,11,36,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_EvalDate,"SysDateTimePick32",WS_TABSTOP,71,0,54,11
+    RTEXT           "Eval",IDC_EvalDateLabel,55,2,14,8,NOT WS_GROUP
+    CTEXT           "Risk Free %",IDC_RiskFreeRateLabel,1,2,40,8,NOT WS_GROUP
+    RTEXT           "Option | Symbols |",IDC_SymbolLabel,8,24,34,16,NOT WS_GROUP
+    CONTROL         "Pure B-S",IDC_PureBS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,1,41,43,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "BondManager WCE MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "BondManager"
+            VALUE "LegalCopyright", "Copyright (C) 2003"
+            VALUE "OriginalFilename", "BondManager.EXE"
+            VALUE "ProductName", "BondManager Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_AboutBox, DIALOG
+    BEGIN
+        RIGHTMARGIN, 104
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_PositionsDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 138
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_BondDefinitionDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 134
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_StrategyExplorer, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_OptionDefinitionDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 134
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_YieldCurveDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_StockDefinitionDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 135
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_ClosePositionDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 133
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_OptionAnalyzerDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 134
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_PortfolioNavigatorDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 137
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_PositionListDisplayOptions, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 135
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_BondAnalyzerDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 136
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_ConfirmSavePreferencesDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 133
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_PositionsTranscripts, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 137
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_OptionChainDialog, DIALOG
+    BEGIN
+        RIGHTMARGIN, 138
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_HedgeExplorer, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 136
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_RateSensitiityExplorer, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 143
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_TimeDecayExplorer, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 141
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_VolatilityExplorer, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 143
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 157
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BondAnalyzerDialog DLGINIT
+BEGIN
+    IDC_DeltaYTM, 0x403, 3, 0
+0x352d, "\000" 
+    IDC_DeltaYTM, 0x403, 5, 0
+0x342d, 0x352e, "\000" 
+    IDC_DeltaYTM, 0x403, 3, 0
+0x342d, "\000" 
+    IDC_DeltaYTM, 0x403, 5, 0
+0x332d, 0x352e, "\000" 
+    IDC_DeltaYTM, 0x403, 3, 0
+0x332d, "\000" 
+    IDC_DeltaYTM, 0x403, 5, 0
+0x322d, 0x352e, "\000" 
+    IDC_DeltaYTM, 0x403, 3, 0
+0x322d, "\000" 
+    IDC_DeltaYTM, 0x403, 5, 0
+0x312d, 0x352e, "\000" 
+    IDC_DeltaYTM, 0x403, 3, 0
+0x312d, "\000" 
+    IDC_DeltaYTM, 0x403, 5, 0
+0x302d, 0x352e, "\000" 
+    IDC_DeltaYTM, 0x403, 2, 0
+0x0030, 
+    IDC_DeltaYTM, 0x403, 4, 0
+0x2e30, 0x0035, 
+    IDC_DeltaYTM, 0x403, 2, 0
+0x0031, 
+    IDC_DeltaYTM, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_DeltaYTM, 0x403, 2, 0
+0x0032, 
+    IDC_DeltaYTM, 0x403, 4, 0
+0x2e32, 0x0035, 
+    IDC_DeltaYTM, 0x403, 2, 0
+0x0033, 
+    IDC_DeltaYTM, 0x403, 4, 0
+0x2e33, 0x0035, 
+    IDC_DeltaYTM, 0x403, 2, 0
+0x0034, 
+    IDC_DeltaYTM, 0x403, 4, 0
+0x2e34, 0x0035, 
+    IDC_DeltaYTM, 0x403, 2, 0
+0x0035, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT                "Edit"
+    IDS_TOOL                "A"
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "BondManager\n\\BondManager\n\n\nBondManager\nBondManager"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new database"
+    ID_FILE_OPEN            "Open an existing database"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display version number & copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEW                 "New"
+    IDS_FILE                "File"
+    IDS_MHELP               "Help"
+    IDS_SAVE                "Save"
+    IDS_CUT                 "Cut"
+    IDS_COPY                "Copy"
+    IDS_PASTE               "Paste"
+    IDS_DateFormat          "%d-%b-&Y"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_CAPS       "CAP"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAP_NEW             "Edit"
+    IDR_NEW_STOCK           "Create a position in a Stock"
+    IDR_NEW_BOND            "Create a position in a Bond issue"
+    IDR_NEW_OPTION          "Create an Option, given an underlying Stock"
+    IDR_NEW_HEDGE           "Create a Hedge, given a Stock and an Option"
+    ID_NEW_OPTION           "A vanilla Put or Call on an underlying asset\nOption"
+    ID_NEW_HEDGE            "Define a risk-neutral balance of a stock, an option, and a bond\nHedge"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAP_STOCK           "Stock"
+    ID_CREATE_STOCK_POSITION "Create a position in a stock"
+    ID_DEFINE_OPTION        "Define an Option"
+    ID_CREATE_OPTION_POSITION "Create a position in an option"
+    ID_DEFINE_STOCK         "Define a Stock"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_EVALUATE_STOCK_POSITION "Summarize Positions for a Stock"
+    ID_EVALUATE_OPTION_POSITIONS 
+                            "Summarize options held, cost, profit/loss, annualized return\nEvaluate Option Positions"
+    ID_EVALUATE_STOCK_POSITIONS 
+                            "Summarize shares held, cost, profit/loss, annualized return\nEvaluate Stock Positions"
+    ID_TOOLS_OPTION_ANALYZER 
+                            "Estimate the option price and the 'Greeks'\nOption Analyzer"
+    ID_TOOLS_SPOT_RATE_ESTIMATOR 
+                            "Extrapolate to the spot rate and fit additional terms to a normal rate curve.\nNormal Rate Curve Fitter"
+    ID_DEFINE_BOND          "Define a Bond"
+    ID_CREATE_BOND_POSITION "Create a position in a bond"
+    ID_EVALUATE_BOND_POSITIONS 
+                            "Summarize bonds held, cost, profit/loss, annualized return\nEvaluate Bond Positions"
+    IDS_CAP_POSITIONS       "Create"
+    ID_HEDGE_DEFINITION     "Link all positions in an option to all positions in the underlying stock and evaluate"
+    ID_CREATE               "Create a position in a bond, option or stock\nInvest"
+    IDS_CAP_CREATE          "Invest"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EVALUATE            "Evaluate"
+    IDS_TOOLS               "Tools"
+    IDR_MAIN_TOOLS          "Analyze Positions, Option Price, Estimate Spot Rate"
+    ID_EVALUATE             "Evaluate Positions\nEvaluate"
+    IDS_CAP_EVALUATE        "Evaluate"
+    ID_TOOLS_RISKFREEHEDGE  "Find the risk-free balance of an option and its underlying asset "
+    ID_TOOLS_RISK_FREE_HEDGE 
+                            "Find the risk-free balance of an option and its underlying asset"
+    ID_EVALUATE_HEDGE       "Evaluate hedged option and stock positions\nHedged Positions"
+    ID_CREATE_HEDGE         "Link selected positions of an option and its underlying and evaluate"
+    ID_TOOLS_HEDGEPOSITIONS "Minimize risk by balancing positions in an option and its underlying asset\nHedge Positions"
+    ID_TOOLS_HEDGE_CALCULATOR 
+                            "Minimize risk by balancing positions in an option ans its underlying asset\nHedge Calculator"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_DISPLAYPREFERENCES "Display Preferences\n"
+    ID_CREATE_DISPLAY_PREFERENCES "Position List Display Preferences\n"
+    ID_TOOLS_DISPLAY_PREFERENCES "Portfolio Navigator Display Preferences\n"
+    IDS_CAP_DELETEANDMODIFY "Delete and Modify"
+    ID_DELETEONLY_MODIFY    "Modify"
+    ID_POSITIONS_POPUP_MODIFY "Modify"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAP_EDIT            "Edit"
+    ID_POSITIONS_POPUP_DELETE "Delete"
+    IDS_CAP_MENUITEM32845   "Delete Only"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_PositionsPopupDelete "Delete"
+    IDS_CAP_DELETE          "Positions"
+    ID_DELETE_MODIFY        "Modify"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAP_HELP            "Help"
+    IDS_CAP_FILE            "File"
+    ID_TOOLS_BOND_ANALYZER  "Estimate bond price based on a hypothetical Yield To Maturity.\nBond Analyzer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DBSubDir            "NillaHedgeDB"
+    IDS_AppName             "BondManager"
+    IDS_DatabaseDirectory   "DatabaseDirectory"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_CLOSEDB         "Close Database"
+    ID_FILE_OPENDB          "Open Database"
+    ID_FILE_CLOSE_DATABASE  "Close Database"
+    ID_TOOLS_RATESENSITIVITYEXPLORER "Rate Sensitivity Explorer"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\BondManager.rc2"  // non-Microsoft eMbedded Visual C++ edited resources
+#include "afxres.rc"            // Standard components
+//#include "wceres.rc"              // WCE-specific components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
