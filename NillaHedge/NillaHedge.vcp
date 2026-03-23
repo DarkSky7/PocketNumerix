@@ -1,0 +1,3482 @@
+# Microsoft eMbedded Visual Tools Project File - Name="NillaHedge" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE x86) Application" 0x8301
+# TARGTYPE "Win32 (WCE ARM) Application" 0x8501
+
+CFG=NillaHedge - Win32 (WCE ARM) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "NillaHedge.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "NillaHedge.vcn" CFG="NillaHedge - Win32 (WCE ARM) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "NillaHedge - Win32 (WCE ARM) Release" (based on "Win32 (WCE ARM) Application")
+!MESSAGE "NillaHedge - Win32 (WCE ARM) Debug" (based on "Win32 (WCE ARM) Application")
+!MESSAGE "NillaHedge - Win32 (WCE x86) Release" (based on "Win32 (WCE x86) Application")
+!MESSAGE "NillaHedge - Win32 (WCE x86) Debug" (based on "Win32 (WCE x86) Application")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+# PROP BASE Use_MFC 2
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMRel"
+# PROP BASE Intermediate_Dir "ARMRel"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 2
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "ARMRel"
+# PROP Intermediate_Dir "ARMRel"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "_AFXDLL" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "_AFXDLL" /r
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_AFXDLL" /Yu"stdafx.h" /Oxs /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_AFXDLL" /Yu"stdafx.h" /Oxs /M$(CECrtMT) /c
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"wWinMainCRTStartup" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"wWinMainCRTStartup" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+# PROP BASE Use_MFC 2
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMDbg"
+# PROP BASE Intermediate_Dir "ARMDbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 2
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "ARMDbg"
+# PROP Intermediate_Dir "ARMDbg"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "_AFXDLL" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "_AFXDLL" /r
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D "_AFXDLL" /Yu"stdafx.h" /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D "_AFXDLL" /Yu"StdAfx.h" /M$(CECrtMTDebug) /c
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"wWinMainCRTStartup" /debug /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"wWinMainCRTStartup" /debug /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# SUBTRACT LINK32 /pdb:none
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+# PROP BASE Use_MFC 2
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "X86Rel"
+# PROP BASE Intermediate_Dir "X86Rel"
+# PROP BASE CPU_ID "{D6518FF3-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 2
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "X86Rel"
+# PROP Intermediate_Dir "X86Rel"
+# PROP CPU_ID "{D6518FF3-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "_X86_" /d "x86" /d "_i386_" /d "_AFXDLL" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "_X86_" /d "x86" /d "_i386_" /d "_AFXDLL" /r
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /D "_i386_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "NDEBUG" /D "_WIN32_WCE_CEPC" /D "_AFXDLL" /Yu"stdafx.h" /Gs8192 /Oxs /GF /c
+# ADD CPP /nologo /W3 /D "_i386_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "NDEBUG" /D "_WIN32_WCE_CEPC" /D "_AFXDLL" /Yu"stdafx.h" /Gs8192 /Oxs /GF /c
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"wWinMainCRTStartup" /subsystem:$(CESubsystem) /MACHINE:IX86
+# ADD LINK32 /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"wWinMainCRTStartup" /subsystem:$(CESubsystem) /MACHINE:IX86
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+# PROP BASE Use_MFC 2
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "X86Dbg"
+# PROP BASE Intermediate_Dir "X86Dbg"
+# PROP BASE CPU_ID "{D6518FF3-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 2
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "X86Dbg"
+# PROP Intermediate_Dir "X86Dbg"
+# PROP CPU_ID "{D6518FF3-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "_X86_" /d "x86" /d "_i386_" /d "_AFXDLL" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "_X86_" /d "x86" /d "_i386_" /d "_AFXDLL" /r
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "_i386_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "_WIN32_WCE_CEPC" /D "_AFXDLL" /Yu"stdafx.h" /Gs8192 /GF /c
+# ADD CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "_i386_" /D UNDER_CE=$(CEVersion) /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "_WIN32_WCE_CEPC" /D "_AFXDLL" /Yu"stdafx.h" /Gs8192 /GF /c
+# SUBTRACT CPP /Fr
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"wWinMainCRTStartup" /debug /subsystem:$(CESubsystem) /MACHINE:IX86
+# ADD LINK32 ceshell.lib /nologo /base:"0x00010000" /stack:0x10000,0x1000 /entry:"wWinMainCRTStartup" /map /debug /subsystem:$(CESubsystem) /MACHINE:IX86
+# SUBTRACT LINK32 /pdb:none
+# Begin Special Build Tool
+SOURCE="$(InputPath)"
+PostBuild_Cmds=copy c:\stuff output: \PocketNumerix
+# End Special Build Tool
+
+!ENDIF 
+
+# Begin Target
+
+# Name "NillaHedge - Win32 (WCE ARM) Release"
+# Name "NillaHedge - Win32 (WCE ARM) Debug"
+# Name "NillaHedge - Win32 (WCE x86) Release"
+# Name "NillaHedge - Win32 (WCE x86) Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\BitArray.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_BITAR=\
+	".\AssetType.h"\
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_BITAR=\
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_BITAR=\
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_BITAR=\
+	".\AssetType.h"\
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\BOS.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_BOS_C=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_BOS_C=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_BOS_C=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_BOS_C=\
+	".\BOS.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_BOS_C=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_BOS_C=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\BOSListCtrl.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_BOSLI=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\Option.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionsDialog.h"\
+	".\PositionStatus.h"\
+	".\RedBlackListCtrl.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_BOSLI=\
+	".\Bond.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_BOSLI=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\BOSListCtrl.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionsDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_BOSLI=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_BOSLI=\
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PositionDisplayOptions.h"\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_BOSLI=\
+	".\OptionPositionDialog.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_BOSLI=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\Option.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionsDialog.h"\
+	".\PositionStatus.h"\
+	".\RedBlackListCtrl.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\ClosedPosition.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_CLOSE=\
+	".\AssetType.h"\
+	".\ClosedPosition.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_CLOSE=\
+	".\AssetType.h"\
+	".\ClosedPosition.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_CLOSE=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_CLOSE=\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_CLOSE=\
+	".\ClosedPosition.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_CLOSE=\
+	".\AssetType.h"\
+	".\ClosedPosition.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\ClosePositionDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_CLOSEP=\
+	".\AssetType.h"\
+	".\ClosePositionDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_CLOSEP=\
+	".\ClosePositionDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_CLOSEP=\
+	".\ClosePositionDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_CLOSEP=\
+	".\AssetType.h"\
+	".\ClosePositionDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\ConfirmSavePreferencesDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_CONFI=\
+	".\AssetType.h"\
+	".\ConfirmSavePreferencesDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_CONFI=\
+	".\AssetType.h"\
+	".\ConfirmSavePreferencesDialog.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_CONFI=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_CONFI=\
+	".\ConfirmSavePreferencesDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_CONFI=\
+	".\AssetType.h"\
+	".\ConfirmSavePreferencesDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\DataManager.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_DATAM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\ClosedPosition.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_DATAM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_DATAM=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_DATAM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_DATAM=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_DATAM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\ClosedPosition.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\DBFile.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_DBFIL=\
+	".\DBFile.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_DBFIL=\
+	".\DBFile.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_DBFIL=\
+	".\DBFile.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_DBFIL=\
+	".\DBFile.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\FPoint.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_FPOIN=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FPOIN=\
+	".\FPoint.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_FPOIN=\
+	".\FPoint.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_FPOIN=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\HedgeExplorer.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_HEDGE=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\HedgeExplorer.h"\
+	".\LineSeg.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PlotDialog.h"\
+	".\Polyline.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_HEDGE=\
+	".\Bond.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_HEDGE=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\HedgeExplorer.h"\
+	".\LineSeg.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PlotDialog.h"\
+	".\Polyline.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_HEDGE=\
+	".\Bond.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_HEDGE=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\HedgeExplorer.h"\
+	".\LineSeg.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PlotDialog.h"\
+	".\Polyline.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_HEDGE=\
+	".\Bond.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_HEDGE=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\HedgeExplorer.h"\
+	".\LineSeg.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PlotDialog.h"\
+	".\Polyline.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\HttpGetFile.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_HTTPG=\
+	".\AssetType.h"\
+	".\BitArray.h"\
+	".\HttpGetFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\RedBlackListCtrl.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_HTTPG=\
+	".\AssetType.h"\
+	".\BitArray.h"\
+	".\HttpGetFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\RedBlackListCtrl.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_HTTPG=\
+	".\AssetType.h"\
+	".\BitArray.h"\
+	".\HttpGetFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\RedBlackListCtrl.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_HTTPG=\
+	".\AssetType.h"\
+	".\BitArray.h"\
+	".\HttpGetFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\RedBlackListCtrl.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\LineSeg.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_LINES=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\LineSeg.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_LINES=\
+	".\FPoint.h"\
+	".\LineSeg.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_LINES=\
+	".\FPoint.h"\
+	".\LineSeg.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_LINES=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\LineSeg.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\MainFrm.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_MAINF=\
+	".\AssetType.h"\
+	".\BitArray.h"\
+	".\BOS.h"\
+	".\BOSListCtrl.h"\
+	".\ConfirmSavePreferencesDialog.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\MainFrm.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\OptionDefinitionDialog.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PortfolioCommon.h"\
+	".\PortfolioOverviewDialog.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionListOptionsDialog.h"\
+	".\PositionsDialog.h"\
+	".\PositionStatus.h"\
+	".\PositionTranscriptDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	".\StockManager.h"\
+	".\TreeListCtrl.h"\
+	
+NODEP_CPP_MAINF=\
+	".\Bond.h"\
+	".\BondAnalyzerDialog.h"\
+	".\BondDefinitionDialog.h"\
+	".\BondManager.h"\
+	".\HedgeAnalyzer.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_MAINF=\
+	".\AssetType.h"\
+	".\BitArray.h"\
+	".\BOS.h"\
+	".\BOSListCtrl.h"\
+	".\ConfirmSavePreferencesDialog.h"\
+	".\DBFile.h"\
+	".\FPoint.h"\
+	".\LineSeg.h"\
+	".\MainFrm.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\OptionDefinitionDialog.h"\
+	".\OptionType.h"\
+	".\Polyline.h"\
+	".\PortfolioCommon.h"\
+	".\PortfolioOverviewDialog.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionListOptionsDialog.h"\
+	".\PositionsDialog.h"\
+	".\PositionTranscriptDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	".\TreeListCtrl.h"\
+	
+NODEP_CPP_MAINF=\
+	".\Bond.h"\
+	".\BondAnalyzerDialog.h"\
+	".\BondDefinitionDialog.h"\
+	".\BOSDatabase.h"\
+	".\HedgeAnalyzer.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_MAINF=\
+	".\MainFrm.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_MAINF=\
+	".\AssetType.h"\
+	".\BitArray.h"\
+	".\BOS.h"\
+	".\BOSListCtrl.h"\
+	".\ConfirmSavePreferencesDialog.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\HedgeExplorer.h"\
+	".\MainFrm.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\OptionDefinitionDialog.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PlotDialog.h"\
+	".\PlotOptionsDialog.h"\
+	".\PortfolioCommon.h"\
+	".\PortfolioOverviewDialog.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionListOptionsDialog.h"\
+	".\PositionsDialog.h"\
+	".\PositionStatus.h"\
+	".\PositionTranscriptDialog.h"\
+	".\RateSensitivity.h"\
+	".\RateSensitivityExplorer.h"\
+	".\RedBlackListCtrl.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	".\StockManager.h"\
+	".\TimeDecay.h"\
+	".\TimeDecayExplorer.h"\
+	".\TreeListCtrl.h"\
+	".\VolatilityExplorer.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\Matrix.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_MATRI=\
+	".\AssetType.h"\
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_MATRI=\
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_MATRI=\
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_MATRI=\
+	".\AssetType.h"\
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\NillaDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_NILLA=\
+	".\AssetType.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_NILLA=\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_NILLA=\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_NILLA=\
+	".\AssetType.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\NillaHedge.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_NILLAH=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\MainFrm.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_NILLAH=\
+	".\BondManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_NILLAH=\
+	".\AssetType.h"\
+	".\DBFile.h"\
+	".\DirectoryPickerDialog.h"\
+	".\MainFrm.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_NILLAH=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_NILLAH=\
+	".\MainFrm.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_NILLAH=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\MainFrm.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\NillaHedge.rc
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\NillaHedgeDoc.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_NILLAHE=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_NILLAHE=\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_NILLAHE=\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_NILLAHE=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\NillaHedgeView.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_NILLAHED=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_NILLAHED=\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_NILLAHED=\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_NILLAHED=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\NumEdit.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_NUMED=\
+	".\NumEdit.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_NUMED=\
+	".\NumEdit.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_NUMED=\
+	".\NumEdit.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_NUMED=\
+	".\NumEdit.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\Option.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_OPTIO=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_OPTIO=\
+	".\Bond.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_OPTIO=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_OPTIO=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_OPTIO=\
+	".\Option.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_OPTIO=\
+	".\PocketPortfolio.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_OPTIO=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionAnalyzerDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_OPTION=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_OPTION=\
+	".\Bond.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_OPTION=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_OPTION=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_OPTION=\
+	".\NillaDialog.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_OPTION=\
+	".\ShortRateCalibration_f.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_OPTION=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionChainDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_OPTIONC=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_OPTIONC=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_OPTIONC=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_OPTIONC=\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OptionChainDialog.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_OPTIONC=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_OPTIONC=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainDialog.h"\
+	".\OptionChainListCtrl.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RedBlackListCtrl.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionChainListCtrl.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_OPTIONCH=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_OPTIONCH=\
+	".\NillaHedge.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_OPTIONCH=\
+	".\NillaHedge.h"\
+	".\OptionChainListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_OPTIONCH=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\OptionChainCommon.h"\
+	".\OptionChainListCtrl.h"\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionDefinitionDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_OPTIOND=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionDefinitionDialog.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_OPTIOND=\
+	".\Bond.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_OPTIOND=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionDefinitionDialog.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+NODEP_CPP_OPTIOND=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_OPTIOND=\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionDefinitionDialog.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_OPTIOND=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionDefinitionDialog.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	".\StockManager.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionManager.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_OPTIONM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_OPTIONM=\
+	".\NillaHedge.h"\
+	".\OptionManager.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_OPTIONM=\
+	".\CDataManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_OPTIONM=\
+	".\NillaHedge.h"\
+	".\OptionManager.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_OPTIONM=\
+	".\CDataManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_OPTIONM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\PlotDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_PLOTD=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_PLOTD=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_PLOTD=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_PLOTD=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\PlotOptionsDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_PLOTO=\
+	".\AssetType.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OptionManager.h"\
+	".\PlotDialog.h"\
+	".\PlotOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_PLOTO=\
+	".\AssetType.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OptionManager.h"\
+	".\PlotDialog.h"\
+	".\PlotOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_PLOTO=\
+	".\AssetType.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OptionManager.h"\
+	".\PlotDialog.h"\
+	".\PlotOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_PLOTO=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PlotDialog.h"\
+	".\PlotOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\Polyline.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_POLYL=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\LineSeg.h"\
+	".\NillaHedge.h"\
+	".\Polyline.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_POLYL=\
+	".\FPoint.h"\
+	".\LineSeg.h"\
+	".\NillaHedge.h"\
+	".\Polyline.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_POLYL=\
+	".\FPoint.h"\
+	".\LineSeg.h"\
+	".\NillaHedge.h"\
+	".\Polyline.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_POLYL=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\LineSeg.h"\
+	".\NillaHedge.h"\
+	".\Polyline.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\PortfolioOverviewDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_PORTF=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PortfolioCommon.h"\
+	".\PortfolioOverviewDialog.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	".\TreeListCtrl.h"\
+	
+NODEP_CPP_PORTF=\
+	".\Bond.h"\
+	".\BondManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_PORTF=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionType.h"\
+	".\PortfolioCommon.h"\
+	".\PortfolioOverviewDialog.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\TreeListCtrl.h"\
+	
+NODEP_CPP_PORTF=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_PORTF=\
+	".\BitArray.h"\
+	".\BOS.h"\
+	".\BOSDialog.h"\
+	".\BOSListCtrl.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\PortfolioOverviewDialog.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_PORTF=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_PORTF=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PortfolioCommon.h"\
+	".\PortfolioOverviewDialog.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	".\TimeDecay.h"\
+	".\TreeListCtrl.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\Position.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_POSIT=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaHedge.h"\
+	".\OptionManager.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_POSIT=\
+	".\BondManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_POSIT=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_POSIT=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_POSIT=\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_POSIT=\
+	".\PocketPortfolio.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_POSIT=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaHedge.h"\
+	".\OptionManager.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\PositionListOptionsDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_POSITI=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\PositionListOptionsDialog.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_POSITI=\
+	".\AssetType.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\PositionListOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+NODEP_CPP_POSITI=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_POSITI=\
+	".\PositionListOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_POSITI=\
+	".\AssetType.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\PositionListOptionsDialog.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\PositionsDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_POSITIO=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\BOSListCtrl.h"\
+	".\ClosedPosition.h"\
+	".\ClosePositionDialog.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionsDialog.h"\
+	".\PositionStatus.h"\
+	".\RedBlackListCtrl.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_POSITIO=\
+	".\Bond.h"\
+	".\BondManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_POSITIO=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\BOSListCtrl.h"\
+	".\ClosedPosition.h"\
+	".\ClosePositionDialog.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionsDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_POSITIO=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_POSITIO=\
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\PositionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_POSITIO=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\BOSListCtrl.h"\
+	".\ClosedPosition.h"\
+	".\ClosePositionDialog.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionsDialog.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RedBlackListCtrl.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\PositionTranscriptDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_POSITION=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\ClosedPosition.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\PositionTranscriptDialog.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_POSITION=\
+	".\Bond.h"\
+	".\BondManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_POSITION=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\ClosedPosition.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionTranscriptDialog.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_POSITION=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_POSITION=\
+	".\BOS.h"\
+	".\ClosedPosition.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\PositionTranscriptDialog.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_POSITION=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_POSITION=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\ClosedPosition.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\PositionTranscriptDialog.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\RateSensitivityExplorer.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_RATES=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\RateSensitivityExplorer.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_RATES=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\RateSensitivityExplorer.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_RATES=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\RateSensitivityExplorer.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_RATES=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PlotDialog.h"\
+	".\PlotOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RateSensitivityExplorer.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\RedBlackListCtrl.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_REDBL=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_REDBL=\
+	".\NillaHedge.h"\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_REDBL=\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_REDBL=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\RegistryManager.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_REGIS=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_REGIS=\
+	".\NillaHedge.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_REGIS=\
+	".\NillaHedge.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_REGIS=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\SeekComboBox.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_SEEKC=\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_SEEKC=\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_SEEKC=\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_SEEKC=\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_STDAF=\
+	".\StdAfx.h"\
+	
+# ADD CPP /Yc"stdafx.h"
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_STDAF=\
+	".\StdAfx.h"\
+	
+# ADD CPP /Yc"stdafx.h"
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_STDAF=\
+	".\StdAfx.h"\
+	
+# ADD CPP /Yc"stdafx.h"
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_STDAF=\
+	".\StdAfx.h"\
+	
+# ADD CPP /Yc"stdafx.h"
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\Stock.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_STOCK=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_STOCK=\
+	".\Bond.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_STOCK=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_STOCK=\
+	".\Bond.h"\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_STOCK=\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+NODEP_CPP_STOCK=\
+	".\PocketPortfolio.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_STOCK=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\StockDefinitionDialog.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_STOCKD=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	".\StockManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_STOCKD=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\SeekComboBox.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+NODEP_CPP_STOCKD=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_STOCKD=\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_STOCKD=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	".\StockManager.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\StockManager.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_STOCKM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_STOCKM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\ClosedPosition.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_STOCKM=\
+	".\Bond.h"\
+	".\BondManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_STOCKM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\ClosedPosition.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\Position.h"\
+	".\RegistryManager.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+NODEP_CPP_STOCKM=\
+	".\Bond.h"\
+	".\BondManager.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_STOCKM=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockManager.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\TimeDecayExplorer.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_TIMED=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\StdAfx.h"\
+	".\TimeDecayExplorer.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_TIMED=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\StdAfx.h"\
+	".\TimeDecayExplorer.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_TIMED=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PlotDialog.h"\
+	".\StdAfx.h"\
+	".\TimeDecayExplorer.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_TIMED=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PlotDialog.h"\
+	".\PlotOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\TimeDecay.h"\
+	".\TimeDecayExplorer.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\TreeListCtrl.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_TREEL=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\PortfolioCommon.h"\
+	".\StdAfx.h"\
+	".\TreeListCtrl.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_TREEL=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DBFile.h"\
+	".\NillaHedge.h"\
+	".\OneStk3OptStrategy.h"\
+	".\OptionType.h"\
+	".\PortfolioCommon.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\TreeListCtrl.h"\
+	
+NODEP_CPP_TREEL=\
+	".\BOSDatabase.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_TREEL=\
+	".\StdAfx.h"\
+	".\TreeListCtrl.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_TREEL=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\PortfolioCommon.h"\
+	".\StdAfx.h"\
+	".\TreeListCtrl.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\Vector.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_VECTO=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_VECTO=\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_VECTO=\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_VECTO=\
+	".\AssetType.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\VolatilityExplorer.cpp
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+DEP_CPP_VOLAT=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\PlotDialog.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\VolatilityExplorer.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+DEP_CPP_VOLAT=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\PlotDialog.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\VolatilityExplorer.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+DEP_CPP_VOLAT=\
+	".\AssetType.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\PlotDialog.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\VolatilityExplorer.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+DEP_CPP_VOLAT=\
+	".\AssetType.h"\
+	".\BOS.h"\
+	".\DataManager.h"\
+	".\FPoint.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NumEdit.h"\
+	".\OneStk3OptStrategy.h"\
+	".\Option.h"\
+	".\OptionManager.h"\
+	".\OptionType.h"\
+	".\PlotDialog.h"\
+	".\PlotOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionStatus.h"\
+	".\RateSensitivity.h"\
+	".\RegistryManager.h"\
+	".\SeekComboBox.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\TimeDecay.h"\
+	".\VolatilityExplorer.h"\
+	".\VolatilityExplorerState.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=.\AssetType.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BitArray.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BOS.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BOSListCtrl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ClosedPosition.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ClosePositionDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ConfirmSavePreferencesDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DataManager.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DBFile.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\FPoint.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\HedgeExplorer.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\HttpGetFile.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\LineSeg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MainFrm.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Matrix.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\newres.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\NillaDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\NillaHedge.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\NillaHedgeDoc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\NillaHedgeView.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\NumEdit.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OneStk3OptStrategy.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Option.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionAnalyzerDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionChainCommon.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionChainDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionChainListCtrl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionDefinitionDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionManager.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OptionType.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PlotDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PlotOptionsDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Polyline.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PortfolioCommon.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PortfolioOverviewDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Position.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PositionListOptionsDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PositionsDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PositionStatus.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PositionTranscriptDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\RateSensitivityExplorer.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\RedBlackListCtrl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\RegistryManager.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Resource.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SeekComboBox.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Stock.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\StockDefinitionDialog.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\StockManager.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\TimeDecayExplorer.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\TreeListCtrl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Vector.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\VolatilityExplorer.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\VolatilityExplorerState.h
+# End Source File
+# End Group
+# Begin Group "Resource Files"
+
+# PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# Begin Source File
+
+SOURCE=.\res\bitmap2.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\Cmdbar.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\folders.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\Hedge.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\icon1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\NillaHedge.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\NillaHedge.rc2
+# PROP Exclude_From_Scan -1
+# PROP BASE Exclude_From_Build 1
+# PROP Exclude_From_Build 1
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\state.bmp
+# End Source File
+# End Group
+# Begin Source File
+
+SOURCE=.\ReadMe.txt
+# End Source File
+# End Target
+# End Project
