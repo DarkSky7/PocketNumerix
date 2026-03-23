@@ -1,0 +1,11 @@
+Before rjCipher:
+ b2 5c 1f 15 8b c0 dd cf 9f ae 8c 66 a5 8e c6 40 94 63 39 16 12 fc cd e6 db 2b a8 f0 5e aa db 21
+After rjCipher:
+ 83 39 d3 19 67 4a cf 35 d5 df 25 e8 3c d2 9e ce cd 5a 63 86 3e 89 35 36 0e 92 43 97 8a a1 7c c5
+
+Before rjCipher:
+ 9d 06 a6 86 06 a1 72 c0 c6 82 58 15 55 8b 67 85 71 a5 8f e2 0c 09 99 8c ed 6a c2 4e 0d 99 23 8c
+After rjCipher:
+ f0 47 77 f9 65 cb b5 a5 bd 3b 13 8c ce 1d 8e 49 86 3d f0 ff 60 ac 62 51 36 1b 0e d2 02 1b c2 5c
+
+cfb_encrypt: ee eb 90 99 42 df a1 50 25 40
