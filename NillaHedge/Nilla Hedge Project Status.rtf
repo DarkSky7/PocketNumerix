@@ -1,0 +1,153 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\f0\fs20 PositionsDialog:\par
+Option positions aren't showing up in the Positions list (done?)\par
+\par
+What happens when option isn't defined, but there are positions?\par
+What happens when stock isn't defined, but the option and some option positions are?\par
+\par
+Try to get context menus working over the positions list...\par
+\par
+StockDefinitionDialog:\par
+\par
+BondDefinitionDialog:\par
+// 1) Isn't setting the default value of coupons per year to 2 (done)\par
+2) Bonds that sell at a premium produce strange yield to maturity values\par
+// 3) Reload yield values are 100x too big (done)\par
+\par
+Bond:\par
+countDays() is inaccurate for ActualActual.  Needs to be calculated manually.\par
+This might be fixed already - check the result...\par
+\par
+BondPositionDialog (now handled by PositionsDialog):\par
+DeleteOrModifyPosition() needs work on computation of aggregate coupons, present value, and effective yield... (done already?)\par
+\par
+Fix computation of % yield so that it doesn't turn the dates around...   is this done ???\par
+\par
+BondDefinitionDialog:\par
+1) Imputed Yield doesn't work when there are no coupons, doesn't respond to changes in same.\par
+2) Dialog is locking up when the coupon rate is > 0, but there are no coupons.\par
+\par
+RateCurveEstimator ...\par
+// 1) spotRate is being multiplied by 100 when the dialog is closed and opened again. (done)\par
+2) The 1yr, 7yr and 15yr rates are coming up as user supplied, even when they are not.\par
+// 3) The 7yr rate is also being divided by 100 when the dialog is closed and reopened. (done)\par
+\par
+Architecture:\par
+// Separate stock definitions from positions in the document architecture\par
+\par
+CArithEdit class...\par
+12) Create an arithmetic expression parser for numeric CEdit boxes\par
+\par
+Server:\par
+write a robot to mine issue definitions from finance.yahoo.com\par
+\par
+CBitArray::store() expects numBits to be set already (as it should be)\par
+--------------------------------------------------------------\par
+StockPosition dialog...\par
+work?\par
+12) Replace ordinary CEdit boxes with CArithEdit boxes for Shares and TotalCost on the 'Positions' dialogs\par
+ 5) Need to save column widths in user's .ini file or the registry.\par
+ 6) Need to save column order array in user's .ini file or the registry.\par
+\par
+Put-Call Parity dialog (killed)\par
+1) When Stock is selected, if there is just one put, or one call, or a put-call parity pair (where the strikes and expiry dates match), load the appropriate option values.  If there is more than one pair and there is a pair that is nearest the money, select that pair.\par
+2) When a call or put option is selected, if there is a matching put or call, load the matching option too.\par
+\par
+OptionAnalyzerDialog...\par
+1) Changed COption member attribute useAnalyticalValue into a document attribute.\tab\tab Verify\par
+2) Changed CStock member attribute incDivInReturn into a document attribute.\tab\tab\tab Verify\par
+3) Implied Volatility\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab Verify\par
+4) Finish the implementation of the AmericanOption check box.  Add it to the document (later to move into a preferences file) and load it before posting the dialog. (killed)\par
+5) Fix the trivariate normal integral computation (ams.org, incoming books at Daley)\par
+6) verify Geske-Johnson (Put) pricing.  Currently producing complex values going into bivarNormIntegral() (killed)\par
+8) Use a better approach to selecting the option symbol?  e.g. a ComboBox\par
+\par
+Application Level:\par
+1) Move display preferences into a file separate from the stocks, bonds, and options...\par
+2) Use the display preferences from the document in the initial stock, bond & options positions dialogs ?\par
+\par
+Notes:\par
+Optimal Exercise Boundary !!!  Matlab first\par
+Never exercise an American Put when the rfr = 0.\par
+Never exercise an American Call when the divYield = 0.\par
+American Puts (GeskeJohnson, Carr, Broadie-Detemple?):\par
+Can't post the Option Analyzer dialog without throwing an ASSERT in wincore.  Is this still happening???  GJ is producing complex probabilities (possibly due to evaluating log() with a negative parameter) which bivarNormIntegral chokes on.\par
+\par
+All dialogs with options.  Consider changing from option symbol selector to edit style drop-down to allow for option name change where appropriate?\par
+\par
+Stocks\par
+1) Should we try to account for non-trading days in dayBefore()?\par
+2) Verify lastDivB4Date\par
+3) Rewrite curYield() to iterate toward a continuous yield rate (use findXgivenY ???)\par
+4) Wrote fracYears, but aren't using it anywhere!!!\par
+\par
+Bonds...\par
+1) Should we reduce \{imputed yield, profit, return\} by coupon liability on definition and evaluation dialogs\par
+2) Don't upcase the 'symbol'?\par
+\par
+Options ...\par
+1) Verify RollGeskeWaley\par
+2) Verify GeskeJohnson\par
+3) Verify impliedVolaility\par
+4) Verify findSstar() somehow\par
+\par
+Global...\par
+1) Verify findXgivenY()\par
+\par
+StockValueDialog...\par
+1) Compute Next Dividend Date\par
+\par
+OptionValueDialog...\par
+1) Compute Next Dividend Date\par
+\par
+--------------------------------------------------------\par
+StockPosition dialog...\par
+11) Fix crash in ColumnClick (or Sort)\tab\tab\tab\tab\tab\tab\tab\tab DONE\par
+4) Need additional adjustments to the initial column widths in the PositionsList\tab\tab\tab DONE\par
+9) OnEnter() needs to gate calling loadColumnTotals by dspOptns->purchaseDate\tab\tab\tab DONE\par
+6) Add an "Enter" button, so the dialog doesn't have to be closed and reopened to enter a position.\tab DONE\par
+7) if yield >= 1000, drop the fractional digits\tab\tab\tab\tab\tab\tab\tab DONE\par
+1) % yield is coming out WAY TOO HIGH, e.g. 200,000 when it should be 0.200\tab\tab Seems okay now.\par
+3) Need to develop a policy for preventing addition of the same position twice - once with the enter button and once when the dialog closes (IDOK).\tab\tab\tab\tab\tab\tab\tab\tab DONE\par
+0) Create total cost when both stock and number of shares is known, insert it from killfocusSymbol and killfocusShares\tab\tab\tab\tab\tab\tab\tab\tab\tab DONE\par
+\par
+PutCallParityDialog:  \tab\tab\tab\tab\tab\tab\tab\tab Verified\par
+Implied Volatility Dialog:\tab\tab\tab\tab\tab\tab\tab\tab Canceled\par
+Adapt rate estimator code to implied volatility using pseudoinverse...  Save all put/call strike/expiry combos under made up names to save definition time later.\par
+\par
+Bonds...\par
+Rewrite imputedYield using global (NillaHedge.cpp) findXgivenY()\tab\tab\tab DONE\par
+\par
+American Calls (RollGeskeWhaley): \par
+Ensure that code agrees with Matlab version\tab\tab\tab\tab\tab DONE\par
+\par
+findSstar:\par
+Import the Matlab version\tab\tab\tab\tab\tab\tab\tab DONE\par
+\par
+BondDialog:\par
+2) Need to account for dayCounting in aggCpnCostBondsRet ?\tab\tab\tab DONE\par
+Try selecting the coupons per year to show that its the current control\tab\tab DONE\par
+Change Coupon from $ to %.\par
+Tab order to include radio buttons\par
+\par
+Tabled:  Investigate QuadrivariateNormalIntegrals for a modified GJ AmerPut (for Chang, Chung, Stapleton)\par
+\par
+BondDialog:Format/Echo Volatility back\par
+BondDialog:Format/Echo Coupon rate back\par
+Why is AmerVal and EuroVal the same????\par
+Is the exercise asymptote accurate for Calls???\par
+find the real Exercise Boundary (rather than the asymptote) ???\par
+\par
+Need a new COption::impliedVolatility(), Wilmott's is unstable!\tab\tab\tab DONE\par
+\par
+OptionAnalyzerDialog::updateControls does not properly set IDC_StrikePriceResult\par
+develop more sophisticated annual yield model in CStock::equivYield( void ) and aggDivCostReturn ???\par
+Access violation in posting the AnalyticalAssessmentDialog (this may be a costructor syntax problem) (fixed ???)\par
+Select all of Option Price in the OptionValueDialog when we transfer the focus from OptionSymbol (fixed???)\par
+StockSymbol not getting initial focus when StockDefinitionDialog is posted (fixed???)\par
+MainFrame posts of dialogs need to capture variables from both ValueDialogs (fixed???)\par
+initial dividend dates are not working in the StockDefinionDialog (fixed)\par
+Add function to OptionPositionDialog to format value of Options to three decimal places (fixed)\par
+See if similar function is in StockPositionDialog for Shares (okay)\par
+}
+ 
