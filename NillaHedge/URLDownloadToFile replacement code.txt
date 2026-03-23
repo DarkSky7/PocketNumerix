@@ -1,0 +1,222 @@
+From:  http://lists.transgaming.org/pipermail/winex-devel/2004-January/000061.html
+
+This is my first encounter with the Wine(X) code so it might not be done 
+The Righ Way. I implemented the URLDownloadToFile functions in 
+urlmon.dll. With this code, I was able to get the Anarchy Online 
+downloader to obtain the installation files and install the game. Let me 
+know what I can do to improve my future submissions.
+-------------- next part --------------
+Index: dlls/urlmon/umon.c
+===================================================================
+RCS file: /cvsroot/winex/dlls/urlmon/umon.c,v
+retrieving revision 1.5
+diff -u -r1.5 umon.c
+--- dlls/urlmon/umon.c	25 Jul 2003 21:45:20 -0000	1.5
++++ dlls/urlmon/umon.c	15 Jan 2004 19:00:37 -0000
+@@ -1002,3 +1002,163 @@
+     return hr;
+ }
+ 
+/******************************************************************************
+ * URLDownloadToFileA	(URLMON.@)
+ *
+ * Given a URL, download the data and save it to the specified file
+ *
+ * Bugs
+ * 	Total file size is unknown and not reported to the callback causing some
+ * 	issues with progress bars using the data.
+ * 	Original specification calls for return values of S_OK and E_OUTOFMEMORY
+ *
+ * Returns
+ * 	S_OK		success
+ * 	E_FAIL	error
+ */
+HRESULT WINAPI URLDownloadToFileA(
+    LPUNKNOWN			pCaller,	// address of calling COM component
+    LPCSTR			szURL,		// url to download
+    LPCSTR			szFileName,	// file to save to
+    DWORD			dwReserved,	// must be 0
+    LPBINDSTATUSCALLBACK	lpfnCB		// address of IBindStatusCallback	)
+{
+	HINTERNET hInternet, hResource;
+	HRESULT hRes = S_OK;
+
+	TRACE( "urlmon:(%p, %s, %s, %li, %p): stub\n", pCaller, szURL, szFileName, dwReserved, lpfnCB );
+
+		// If the callback returns E_ABORT, we cancel the download
+	if ( lpfnCB  &&  IBindStatusCallback_OnProgress(lpfnCB, 0, 0, BINDSTATUS_CONNECTING, NULL) == E_ABORT )
+		return S_OK;
+
+	hInternet = InternetOpenA( "User Agent", 0, NULL, NULL, 0 );
+	if ( ! hInternet )
+	{
+		ERR( "URLDownloadToFileA: InternetOpen error: %li", GetLastError() );
+		return E_FAIL;
+	}
+
+	hResource = InternetOpenUrlA( hInternet, szURL, NULL, -1, 0, 0 );
+	if ( ! hResource )
+	{	ERR( "URLDownloadToFileA: InternetOpenUrl error:%li", GetLastError() );
+		return E_FAIL;
+	}
+	
+
+	if ( lpfnCB  &&  IBindStatusCallback_OnProgress(lpfnCB, 0, 0, BINDSTATUS_DOWNLOADINGDATA, NULL) != E_ABORT )
+	{	char buf[4096];
+		DWORD bytesRead, totalRead = 0;
+		
+		HANDLE hFile = CreateFileA( szFileName, GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, 0, 0 );
+		if ( hFile == INVALID_HANDLE_VALUE )
+		{	ERR( "URLDownloadToFileA: Unable to open file for write: %li", GetLastError() );
+			hRes = E_FAIL;
+		}
+		else while ( InternetReadFile(hResource, buf, 4096, &bytesRead) )
+		{	if( ! bytesRead )
+				break;
+			if( ! WriteFile(hFile, buf, bytesRead, NULL, NULL) )
+			{	ERR( "URLDownloadToFileA: Error writing to file %s: %li", szFileName, GetLastError() );
+				hRes = E_FAIL;
+			}
+			totalRead += bytesRead;
+			if ( lpfnCB  &&  IBindStatusCallback_OnProgress(lpfnCB, totalRead, 0,
+						 BINDSTATUS_DOWNLOADINGDATA, NULL) == E_ABORT )
+				break;
+		}
+
+		if ( ! CloseHandle(hFile) )
+			WARN( "URLDownloadToFileA: CloseHandle failed: %li", GetLastError() );			
+	}
+
+	if ( ! InternetCloseHandle(hResource)  ||  ! InternetCloseHandle(hInternet) )
+	{
+		WARN( "URLDownloadToFileA: %li", GetLastError() );
+	}
+	return hRes;
+}
+
++/******************************************************************************
++ * URLDownloadToFileW	(URLMON.@)
++ *
++ * Given a URL, download the data and save it to the specified file
++ *
++ * Bugs
++ * 	Total file size is unknown and not reported to the callback causing some
++ * 	issues with progress bars using the data.
++ * 	Original specification calls for return values of S_OK and E_OUTOFMEMORY
++ *
++ * Returns
++ * 	S_OK		success
++ * 	E_FAIL	error
++ */
++HRESULT WINAPI URLDownloadToFileW(
++    LPUNKNOWN pCaller,           /*address of calling COM component*/
++    LPCWSTR szURL,	             /*url to download*/
++    LPCWSTR szFileName,          /*file to save to*/
++    DWORD dwReserved,            /*must be 0*/
++    LPBINDSTATUSCALLBACK lpfnCB  /*address of IBindStatusCallback*/
++    )
++{
++	HINTERNET hInternet, hResource;
++	HRESULT hRes = S_OK;
++
++	TRACE( "urlmon:(%p, %s, %s, %li, %p): stub\n", 
++			pCaller, debugstr_w(szURL), debugstr_w(szFileName), dwReserved, 
++			lpfnCB);
++
++		/* If the callback returns E_ABORT, we cancel the download */
++	if ( lpfnCB  &&  IBindStatusCallback_OnProgress(
++			  lpfnCB, 0, 0, BINDSTATUS_CONNECTING, NULL) == E_ABORT)return S_OK;
++
++	hInternet = InternetOpenA( "User Agent", 0, NULL, NULL, 0 );
++	if(!hInternet)
+	{
++		ERR("URLDownloadToFileW: InternetOpen error: %li", GetLastError());
++		return E_FAIL;
++	}
++
++	hResource = InternetOpenUrlW(hInternet, szURL, NULL, -1, 0, 0);
++	if(!hResource)
+	{
++		ERR("URLDownloadToFileW: InternetOpenUrl error:%li", GetLastError());
++		return E_FAIL;
++	}
++	
++
++	if(lpfnCB && IBindStatusCallback_OnProgress(
++				lpfnCB, 0, 0, BINDSTATUS_DOWNLOADINGDATA, NULL) != E_ABORT)
+	{
++		char buf[4096];
++		DWORD bytesRead, totalRead = 0;
++		
++		HANDLE hFile = CreateFileW(szFileName, GENERIC_WRITE, 0, NULL, 
++				CREATE_ALWAYS, 0, 0);
++		if(hFile == INVALID_HANDLE_VALUE)
+		{
++			ERR("URLDownloadToFileW: Unable to open file for write: %li", 
++					GetLastError());
++			hRes = E_FAIL;
++		}
++		else while ( InternetReadFile( hResource, buf, 4096, &bytesRead ) )
+		{
++			if ( !bytesRead)
+				break;
++			if ( ! WriteFile(hFile, buf, bytesRead, NULL, NULL))
+			{
++				ERR("URLDownloadToFileW: Error writing to file %s: %li", 
++						debugstr_w(szFileName), GetLastError());
++				hRes = E_FAIL;
++			}
++			totalRead += bytesRead;
++				/* Report how much we downloaded, but the total file size is unknown */
++			if ( lpfnCB  &&  IBindStatusCallback_OnProgress(
++			lpfnCB, totalRead, 0, BINDSTATUS_DOWNLOADINGDATA, NULL) == E_ABORT)
++				break;
++		}
++
++		if ( ! CloseHandle(hFile) )
++			WARN("URLDownloadToFileW: CloseHandle failed: %li", GetLastError());
++				
++	}
++	
++	if ( ! InternetCloseHandle(hResource)  ||  !InternetCloseHandle(hInternet)){
++		WARN("URLDownloadToFileW: %li", GetLastError());
++	}
++
++	return hRes;
++}
+Index: dlls/urlmon/urlmon.spec
+===================================================================
+RCS file: /cvsroot/winex/dlls/urlmon/urlmon.spec,v
+retrieving revision 1.3
+diff -u -r1.3 urlmon.spec
+--- dlls/urlmon/urlmon.spec	23 Dec 2002 19:39:20 -0000	1.3
++++ dlls/urlmon/urlmon.spec	15 Jan 2004 19:00:37 -0000
+@@ -72,8 +72,8 @@
+ @ stub URLDownloadA
+ @ stub URLDownloadToCacheFileA
+ @ stub URLDownloadToCacheFileW
+-@ stub URLDownloadToFileA
+-@ stub URLDownloadToFileW
++@ stdcall URLDownloadToFileA(ptr str str long ptr) URLDownloadToFileA
++@ stdcall URLDownloadToFileW(ptr wstr wstr long ptr) URLDownloadToFileW
+ @ stub URLDownloadW
+ @ stub URLOpenBlockingStreamA
+ @ stub URLOpenBlockingStreamW
+Index: include/urlmon.h
+===================================================================
+RCS file: /cvsroot/winex/include/urlmon.h,v
+retrieving revision 1.1.1.5
+diff -u -r1.1.1.5 urlmon.h
+--- include/urlmon.h	17 Feb 2003 02:46:04 -0000	1.1.1.5
++++ include/urlmon.h	15 Jan 2004 19:00:37 -0000
+@@ -275,7 +275,9 @@
+ 
+ HRESULT WINAPI CreateURLMoniker(IMoniker *pmkContext, LPCWSTR szURL, IMoniker **ppmk);
+ HRESULT WINAPI RegisterBindStatusCallback(IBindCtx *pbc, IBindStatusCallback *pbsc, IBindStatusCallback **ppbsc, DWORD dwReserved);
+-
++#define	URLDownloadToFile WINELIB_NAME_AW(URLDownloadToFile)
++HRESULT WINAPI URLDownloadToFileA(LPUNKNOWN pCaller, LPCSTR szURL, LPCSTR szFileName, DWORD dwReserved, LPBINDSTATUSCALLBACK lpfnCB);
++HRESULT WINAPI URLDownloadToFileW(LPUNKNOWN pCaller, LPCWSTR szURL, LPCWSTR szFileName, DWORD dwReserved, LPBINDSTATUSCALLBACK lpfnCB);
+ #ifdef __cplusplus
+ }      /* extern "C" */
+ #endif /* defined(__cplusplus) */
