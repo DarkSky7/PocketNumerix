@@ -1,0 +1,404 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="YieldCurveFitter_User_Guide_files/filelist.xml">
+<link rel=Edit-Time-Data href="YieldCurveFitter_User_Guide_files/editdata.mso">
+<link rel=OLE-Object-Data href="YieldCurveFitter_User_Guide_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>YieldCurveFitter User Guide</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="date"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Mike Landis</o:Author>
+  <o:LastAuthor> </o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>25</o:TotalTime>
+  <o:LastPrinted>2006-03-08T15:20:00Z</o:LastPrinted>
+  <o:Created>2006-03-08T15:19:00Z</o:Created>
+  <o:LastSaved>2006-03-08T15:21:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>848</o:Words>
+  <o:Characters>4834</o:Characters>
+  <o:Company>Savant Resources</o:Company>
+  <o:Lines>40</o:Lines>
+  <o:Paragraphs>11</o:Paragraphs>
+  <o:CharactersWithSpaces>5671</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>115</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	vertical-align:super;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-footer:url("YieldCurveFitter_User_Guide_files/header.htm") f1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="16386" style='mso-position-horizontal:right;
+  mso-position-vertical:top;mso-position-vertical-relative:line'
+  o:allowoverlap="f" fill="f" fillcolor="white" stroke="f">
+  <v:fill color="white" on="f"/>
+  <v:stroke on="f"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1 style='margin-right:-2.25pt'><a name="_Toc107834090"></a><a
+name="_Toc107835296"></a><a name="_Toc108253658"></a><a name="_Toc107834003"><span
+style='mso-bookmark:_Toc108253658'><span style='mso-bookmark:_Toc107835296'><span
+style='mso-bookmark:_Toc107834090'></span></span></span></a><span class=SpellE><span
+style='mso-bookmark:_Toc107834003'><span style='mso-bookmark:_Toc108253658'><span
+style='mso-bookmark:_Toc107835296'><span style='mso-bookmark:_Toc107834090'>YieldCurveFitter</span></span></span></span></span><span
+style='mso-bookmark:_Toc107834003'></span><span style='mso-bookmark:_Toc108253658'><span
+style='mso-bookmark:_Toc107835296'><span style='mso-bookmark:_Toc107834090'></span></span></span></h1>
+
+<span style='mso-bookmark:_Toc107834090'></span><span style='mso-bookmark:_Toc107835296'></span><span
+style='mso-bookmark:_Toc108253658'></span>
+
+<p class=MsoNormal style='margin-right:-2.25pt'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1037" type="#_x0000_t75" style='position:absolute;
+ margin-left:440.15pt;margin-top:0;width:191.8pt;height:252.65pt;z-index:1;
+ mso-wrap-distance-top:7.2pt;mso-wrap-distance-bottom:7.2pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="YieldCurveFitter_User_Guide_files/image001.png" o:title=""/>
+ <w:wrap type="square" side="left"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1037" DrawAspect="Content" ObjectID="_1203314891">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=256 height=337
+src="YieldCurveFitter_User_Guide_files/image002.jpg" align=right hspace=12
+vspace=10 v:shapes="_x0000_s1037"><![endif]>The <span class=SpellE>YieldCurveFitter</span>
+serves two purposes:<span style='mso-spacerun:yes'>  </span>to calculate the
+risk free rate; and to interpolate between Treasury bill rates to obtain rates
+for other popular terms.<span style='mso-spacerun:yes'>  </span>The standard
+T-bill maturities include all of those in the left column and both of those in
+the Spot Rate box at the top of the dialog.<span style='mso-spacerun:yes'> 
+</span>At right, you can see its initial state.<span style='mso-spacerun:yes'> 
+</span>Once you’ve used it, the values you enter are saved for recall the next time
+you use it.</p>
+
+<h3 style='margin-right:-2.25pt'><a name="_Toc107834091">Spot Rate</a></h3>
+
+<p class=MsoNormal style='margin-right:-2.25pt'>The spot interest rate is an
+instantaneous rate of interest available for transient deposits – those with no
+commitment to leave the account undisturbed for a period of time.<span
+style='mso-spacerun:yes'>  </span>It’s a conservative rate, often less than you
+could obtain with a simple passbook savings account at the corner bank or
+savings and loan.<span style='mso-spacerun:yes'>  </span>Assuming a normal
+yield curve where rates tend to increase as terms get longer, the spot interest
+rate is obtained by extrapolating the yield curve downward to the value it
+would be if the term were zero.</p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'>When the spot rate is constructed
+from the Treasury bill term structure, rates considered to be ‘risk-free’, the
+spot rate is considered to be the ‘risk free rate’ of interest which is central
+to options pricing theory.<span style='mso-spacerun:yes'>  </span>To get a good
+estimate of the spot rate you need the three and six month T-bill rates.<span
+style='mso-spacerun:yes'>  </span>The result of the extrapolation from these
+two T-bill rates appears immediately below the remaining edit boxes in the
+dialog.</p>
+
+<h3 style='margin-right:-2.25pt'>Fetch</h3>
+
+<p class=MsoNormal style='margin-right:-2.25pt'>When your Pocket PC is equipped
+with Ethernet capabilities and the network is available, the Fetch button will
+retrieve T-bill rates for the current calendar day from a server on the
+Internet.<span style='mso-spacerun:yes'>  </span>Once you’ve retrieved rates
+from the server, the <span class=SpellE>YieldCurveFitter</span> displays the
+date for which the most recently fetched T-bill rates apply.<span
+style='mso-spacerun:yes'>  </span>If you subsequently modify any or all of the
+U.S. Treasury yields to observe what might happen to the spot rate or any of
+the fitted yields, you can recall the unmodified T-bill rates for the day by clicking
+Fetch again.<span style='mso-spacerun:yes'>  </span>The unmodified values are
+cached locally, so no Internet connection is needed to reload the rates for the
+day, but if the calendar date has changed since your last successful fetch, the
+<span class=SpellE>YieldCurveFitter</span> will again attempt to query the
+server for the current rates.<span style='mso-spacerun:yes'>  </span>The cached
+values will also be retrieved if the calendar has<i style='mso-bidi-font-style:
+normal'> </i>changed, but an error occurs during the fetch operation.</p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1039" type="#_x0000_t75" style='position:absolute;margin-left:456.5pt;
+ margin-top:0;width:191.8pt;height:252.65pt;z-index:2;mso-wrap-distance-top:7.2pt;
+ mso-wrap-distance-bottom:7.2pt;mso-position-horizontal:right;
+ mso-position-vertical:top;mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="YieldCurveFitter_User_Guide_files/image003.png" o:title=""/>
+ <w:wrap type="square" side="left"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1039" DrawAspect="Content" ObjectID="_1203314893">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=256 height=337
+src="YieldCurveFitter_User_Guide_files/image004.jpg" align=right hspace=12
+vspace=10 v:shapes="_x0000_s1039"><![endif]>Note that there is no guarantee
+that the latest rates available at the server will necessarily be the ones for
+the current date in your time zone.<span style='mso-spacerun:yes'>  </span>The
+date posted on the display is associated with the rates presented and is not related
+to the current date and time.</p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'>The screen area below the Spot
+Rate and the Date will indicate progress messages associated with the
+query.<span style='mso-spacerun:yes'>  </span>The status line will blank after successfully
+completing the fetch.<span style='mso-spacerun:yes'>  </span>If an error should
+occur, a brief indication of the failure mechanism will remain displayed –
+these are generally an indication of a network failure.<span
+style='mso-spacerun:yes'>  </span>If the query should fail, the last stored values
+and their associated date will be reloaded.</p>
+
+<h3 style='margin-right:-2.25pt'><a name="_Toc107834092">Interpolating for
+Other Term Rates</a></h3>
+
+<p class=MsoNormal style='margin-right:-2.25pt'>The rest of the edit boxes are
+only necessary if you want to know what the T-bill equivalent yield would be on
+some term other than those available from the U.S. Treasury.</p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'>All of the edit boxes serve as
+both input and output.<span style='mso-spacerun:yes'>  </span>Any of the edit
+boxes where you enter a number becomes an input that drives the curve
+fitter.<span style='mso-spacerun:yes'>  </span>If you delete the contents of a
+field you had previously entered manually, that edit box will revert from input
+to output mode, and will be used to display a calculated rate with that
+term.<span style='mso-spacerun:yes'>  </span>T-bill rates are normally quoted
+with two fractional digits or less, so output values are displayed with three
+fractional digits to facilitate distinguishing between inputs and outputs.<span
+style='mso-spacerun:yes'>  </span>Naturally, you should not conclude that it’s
+somehow possible to develop four digits of accuracy using three digit data.</p>
+
+<h3 style='margin-right:-2.25pt'>Curve Fitting Assumptions</h3>
+
+<p class=MsoNormal style='margin-right:-2.25pt;mso-pagination:lines-together'>It
+is a very complex undertaking to predict the yield curve in all its
+permutations.<span style='mso-spacerun:yes'>  </span>The Yield Curve Fitter
+assumes that the yield curve is of low order, i.e. that it doesn’t contain
+complex undulations.<span style='mso-spacerun:yes'>  </span>The curve fitter
+will attempt to minimize errors at the input points under that assumption.<span
+style='mso-spacerun:yes'>  </span>If the yield curve really has a sort of
+serpentine appearance or uncharacteristic flat spots, the curve fitter will
+attempt to smooth those anomalous wrinkles out, not accommodate them.<span
+style='mso-spacerun:yes'>  </span>That’s usually what you want a curve fitter
+to do, since serpentine, flat, and inverted yield curves generally occur during
+transitional adjustment phases.</p>
+
+<h3 style='margin-right:-2.25pt'><a name="_Toc108253671"></a><a
+name="_Toc107835311"></a><a name="_Toc107834126"><span style='mso-bookmark:
+_Toc107835311'><span style='mso-bookmark:_Toc108253671'>Save/Restart</span></span></a></h3>
+
+<p class=MsoNormal style='margin-right:-2.25pt;mso-pagination:lines-together'><span
+style='mso-bookmark:_Toc107834126'><span style='mso-bookmark:_Toc107835311'><span
+style='mso-bookmark:_Toc108253671'>When you exit the <span class=SpellE>YieldCurveFitter</span>,
+the currently displayed rates values are stored to the registry.<span
+style='mso-spacerun:yes'>  </span>When you restart <span class=SpellE>YieldCurveFitter</span>,
+they will be reloaded, thus appearing exactly as you left it.<span
+style='mso-spacerun:yes'>  </span>The date displayed is determined by the date
+it was on the last time you successfully fetched rates from the server.<span
+style='mso-spacerun:yes'>  </span>Note that the date displayed does not imply
+that rates displayed are necessarily the same as those provided by the server
+on that date.</span></span></span></p>
+
+<h2 style='margin-right:-2.25pt'><span style='mso-bookmark:_Toc107834126'><span
+style='mso-bookmark:_Toc107835311'><span style='mso-bookmark:_Toc108253671'>Treasury
+<span class=GramE>Bond</span> Rates</span></span></span></h2>
+
+<p class=MsoNormal style='margin-right:-2.25pt'><a
+href="http://finance.yahoo.com/bonds/composite_bond_rates">http://finance.yahoo.com/bonds/composite_bond_rates</a>
+is an excellent source for Treasury bond rates.<span style='mso-spacerun:yes'> 
+</span>The chart below is from <st1:date Year="2005" Day="31" Month="5">31 May
+ 2005</st1:date>, a time when the Fed was increasing the fed funds rate every
+quarter.<span style='mso-spacerun:yes'>  </span>When the Fed is trying to but
+the brakes on the economy, the curve may appear even more erratic in the short
+term.<span style='mso-spacerun:yes'>  </span>When interest rates are stable,
+the curve will probably be smoother.<span style='mso-spacerun:yes'> 
+</span>When the Fed is trying to whip inflation, the curve may even turn upside
+down, with near term rates exceeding long term rates.</p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:366pt;height:343.5pt' o:ole="">
+ <v:imagedata src="YieldCurveFitter_User_Guide_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=488 height=458
+src="YieldCurveFitter_User_Guide_files/image006.jpg" v:shapes="_x0000_i1025"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="MSPhotoEd.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1203314894">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal style='margin-right:-2.25pt'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
