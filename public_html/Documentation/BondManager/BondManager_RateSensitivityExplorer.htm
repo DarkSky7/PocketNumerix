@@ -1,0 +1,353 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List
+href="BondManager_RateSensitivityExplorer_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="BondManager_RateSensitivityExplorer_files/editdata.mso">
+<link rel=OLE-Object-Data
+href="BondManager_RateSensitivityExplorer_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>BondManager - RateSensitivityExplorer</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Mike Landis</o:Author>
+  <o:LastAuthor>Mike Landis</o:LastAuthor>
+  <o:Revision>19</o:Revision>
+  <o:TotalTime>171</o:TotalTime>
+  <o:Created>2006-01-22T14:28:00Z</o:Created>
+  <o:LastSaved>2007-05-14T00:53:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>523</o:Words>
+  <o:Characters>2983</o:Characters>
+  <o:Company>PocketNumerix</o:Company>
+  <o:Lines>24</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3500</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:DontDisplayPageBoundaries/>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Times New Roman";}
+h5
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	vertical-align:super;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.75in .75in .75in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="8194"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1082" type="#_x0000_t75" style='position:absolute;
+ margin-left:400.75pt;margin-top:0;width:193.1pt;height:252pt;z-index:1;
+ mso-wrap-distance-top:7.2pt;mso-wrap-distance-bottom:7.2pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="BondManager_RateSensitivityExplorer_files/image003.png"
+  o:title=""/>
+ <w:wrap type="square" side="right"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1082" DrawAspect="Content" ObjectID="_1240594793">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=336
+src="BondManager_RateSensitivityExplorer_files/image004.jpg" align=right
+hspace=12 vspace=10 v:shapes="_x0000_s1082"><![endif]><a name="_Toc114692982"><span
+style='mso-no-proof:yes'>Rate Sensitivity Explorer</span></a><span
+style='mso-no-proof:yes'><o:p></o:p></span></h2>
+
+<p class=MsoNormal>The Rate Sensitivity Explorer provides a graphical view of
+how bond values respond to changes in yield.<span style='mso-spacerun:yes'> 
+</span>Bonds lose market value when interest rates rise, and gain value when
+interest rates fall.<span style='mso-spacerun:yes'>  </span>The relationship
+between interest rates and value is nonlinear, but over the small (reasonable)
+interest rate ranges presented in the examples here, the curves are nearly
+linear, though there is some curvature evident in Ford Motor Co’s rate
+sensitivity (red).</p>
+
+<h3>The Plot</h3>
+
+<p class=MsoNormal>The X-axis depicts prospective <i style='mso-bidi-font-style:
+normal'>changes</i> in each issue’s yield to maturity.<span
+style='mso-spacerun:yes'>  </span>The Y-axis depicts the percentage change in
+the value of the bond (or portfolio) at each X-value.<span
+style='mso-spacerun:yes'>  </span>The bond’s current yield to maturity is represented
+by the 0 point, so all curves will pass through (0,0).<span
+style='mso-spacerun:yes'>  </span>The colors assigned to the curves are red,
+green, blue, and purple ordered from topmost symbol to bottom, e.g. Ford Motor
+Co – red, Haliburton Co – green, etc. as shown in the screenshot at right.</p>
+
+<h3><!--[if gte vml 1]><v:shape id="_x0000_s1083" type="#_x0000_t75" style='position:absolute;
+ margin-left:0;margin-top:0;width:193.1pt;height:253.3pt;z-index:2;
+ mso-wrap-distance-top:7.2pt;mso-wrap-distance-bottom:7.2pt;
+ mso-position-horizontal:left;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="BondManager_RateSensitivityExplorer_files/image001.png"
+  o:title=""/>
+ <w:wrap type="square" side="left"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1083" DrawAspect="Content" ObjectID="_1240594794">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=338
+src="BondManager_RateSensitivityExplorer_files/image005.jpg" align=left
+hspace=12 vspace=10 v:shapes="_x0000_s1083"><![endif]>Plot Enabling Checkboxes</h3>
+
+<p class=MsoNormal>The four checkboxes on the right side of the dialog control
+whether the bond identifier currently displayed in the adjacent combo-box will
+be plotted below.<span style='mso-spacerun:yes'>  </span>All four plots are
+enabled in these examples.</p>
+
+<h3>Bond Identifiers</h3>
+
+<p class=MsoNormal>The four ComboBoxes immediately to the left of the check
+boxes allow you to enter a bond identifier, by selecting the identifiers of a
+bond previously defined in the Bond Definition Dialog.<span
+style='mso-spacerun:yes'>  </span>There are three selection methods possible.<span
+style='mso-spacerun:yes'>  </span>If you’re just interested in plotting the
+next issue in the list, whatever that happens to be, you can scroll through the
+list of identifiers using the up/down hardware keys.<span
+style='mso-spacerun:yes'>  </span>A fresh plot is generated for every arrow-up
+and arrow-down key press, so this method gets you something new to review with
+little effort.<span style='mso-spacerun:yes'>  </span>However, since each plot computes
+the present value of all future coupons for all enabled issues, multiple times
+across the X-axis, it’s a costly mechanism for navigating a long way through
+the list of issues.<span style='mso-spacerun:yes'>  </span>If you need to move
+a long distance in the list, the fast way is to use the drop down list and make
+your selection there.<span style='mso-spacerun:yes'>  </span>The upside down
+caret on the right end drops down a scrollable list containing the identifiers containing
+all of the bond issues you’ve defined.<span style='mso-spacerun:yes'>  </span>Of
+course you can also type the bond identifier manually.<span
+style='mso-spacerun:yes'>  </span>Auto-completion makes this less painful than
+it might otherwise be to select one character at a time with the pen.<o:p></o:p></p>
+
+<h3>Portfolio</h3>
+
+<p class=MsoNormal>Positions must exist in the portfolio for the Portfolio
+checkbox to be enabled.<span style='mso-spacerun:yes'>  </span>In the example
+above right, there were no positions in the portfolio to plot and the Portfolio
+checkbox is disabled.<span style='mso-spacerun:yes'>  </span>Prior to capturing
+the second example at right, two positions were created, representing 200 of
+the Belo Corp bonds and 100 of the Ford Motor Co bonds.<span
+style='mso-spacerun:yes'>  </span>With positions in the portfolio, the
+Portfolio check box is enabled.<span style='mso-spacerun:yes'>  </span>When
+checked, an additional curve is plotted in black, representing the cost weighted
+average rate sensitivity of all bond positions in the portfolio.<span
+style='mso-spacerun:yes'>  </span>Issues in the portfolio with positions are
+each weighted by the cost of those positions relative to the cost of the entire
+bond portfolio.<span style='mso-spacerun:yes'>  </span>Note that the
+portfolio’s rate sensitivity is now 1/3 of the way between the rate
+sensitivities of Belo and Ford.</p>
+
+<h3>‘-‘ Edit Box</h3>
+
+<p class=MsoNormal>The ‘-‘ edit box specifies how far below the current yield
+to maturity to set the low X-value in the plot.</p>
+
+<h3>‘+’ Edit Box</h3>
+
+<p class=MsoNormal>The ‘+’ edit box specifies how far above the current yield
+to maturity to set the high X-value in the plot.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
