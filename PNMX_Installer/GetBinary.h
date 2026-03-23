@@ -1,0 +1,1 @@
+DWORD WINAPI	GetBinary( void* pThreadCtx );
