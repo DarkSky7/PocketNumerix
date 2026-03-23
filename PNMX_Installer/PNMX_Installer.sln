@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PNMX_Installer", "PNMX_Installer\PNMX_Installer.vcproj", "{A03459E2-E166-4113-99D6-0C51684D5EA5}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PNMX_Installer_Setup", "PNMX_Setup\PNMX_Setup.vdproj", "{DFAD4A4A-0C24-448F-850E-1B5028DCB3AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Description = pnmx.com Downloader/Installer 
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A03459E2-E166-4113-99D6-0C51684D5EA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A03459E2-E166-4113-99D6-0C51684D5EA5}.Debug|Win32.Build.0 = Debug|Win32
+		{A03459E2-E166-4113-99D6-0C51684D5EA5}.Release|Win32.ActiveCfg = Release|Win32
+		{A03459E2-E166-4113-99D6-0C51684D5EA5}.Release|Win32.Build.0 = Release|Win32
+		{DFAD4A4A-0C24-448F-850E-1B5028DCB3AB}.Debug|Win32.ActiveCfg = Debug
+		{DFAD4A4A-0C24-448F-850E-1B5028DCB3AB}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
