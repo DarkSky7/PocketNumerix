@@ -1,0 +1,1330 @@
+# eMbedded Visual C++ Dependency File, included by NillaHedge.vcn
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\BitArray.cpp : \
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\BitArray.cpp : \
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\BitArray.cpp : \
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\BitArray.cpp : \
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\Bond.cpp : \
+	".\Bond.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\Bond.cpp : \
+	".\Bond.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\Bond.cpp : \
+	".\Bond.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\Bond.cpp : \
+	".\Bond.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\BondDefinitionDialog.cpp : \
+	".\Bond.h"\
+	".\BondDefinitionDialog.h"\
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\BondDefinitionDialog.cpp : \
+	".\Bond.h"\
+	".\BondDefinitionDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\BondDefinitionDialog.cpp : \
+	".\BondDefinitionDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\BondDefinitionDialog.cpp : \
+	".\Bond.h"\
+	".\BondDefinitionDialog.h"\
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\BOSDatabase.cpp : \
+	".\BOSDatabase.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\BOSDatabase.cpp : \
+	".\BOSDatabase.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\BOSDatabase.cpp : \
+	".\BOSDatabase.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\BOSDatabase.cpp : \
+	".\BOSDatabase.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\BOSDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\BOSDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\BOSDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\BOSDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\BOSListCtrl.cpp : \
+	".\BitArray.h"\
+	".\Bond.h"\
+	".\BOSDialog.h"\
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionsDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\BOSListCtrl.cpp : \
+	".\BitArray.h"\
+	".\Bond.h"\
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\BOSListCtrl.cpp : \
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PositionDisplayOptions.h"\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\BOSListCtrl.cpp : \
+	".\BitArray.h"\
+	".\Bond.h"\
+	".\BOSDialog.h"\
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionsDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\MainFrm.cpp : \
+	".\BitArray.h"\
+	".\Bond.h"\
+	".\BondDefinitionDialog.h"\
+	".\BOSDialog.h"\
+	".\BOSListCtrl.h"\
+	".\MainFrm.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\PortfolioNavigatorOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionListOptionsDialog.h"\
+	".\PositionsDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\SpotRateEstimatorDialog.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\MainFrm.cpp : \
+	".\BitArray.h"\
+	".\Bond.h"\
+	".\BondDefinitionDialog.h"\
+	".\MainFrm.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\PortfolioNavigatorOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionListOptionsDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\SpotRateEstimatorDialog.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\MainFrm.cpp : \
+	".\MainFrm.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\MainFrm.cpp : \
+	".\BitArray.h"\
+	".\Bond.h"\
+	".\BondDefinitionDialog.h"\
+	".\BOSDialog.h"\
+	".\BOSListCtrl.h"\
+	".\MainFrm.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\PortfolioNavigatorOptionsDialog.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionListOptionsDialog.h"\
+	".\PositionsDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\SpotRateEstimatorDialog.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\Matrix.cpp : \
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\Matrix.cpp : \
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\Matrix.cpp : \
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\Matrix.cpp : \
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\NillaDialog.cpp : \
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\NillaDialog.cpp : \
+	".\Bond.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\NillaDialog.cpp : \
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\NillaDialog.cpp : \
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\NillaHedge.cpp : \
+	".\MainFrm.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\NillaHedge.cpp : \
+	".\MainFrm.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\NillaHedge.cpp : \
+	".\MainFrm.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\NillaHedge.cpp : \
+	".\MainFrm.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\NillaHedge.rc : \
+	".\newres.h"\
+	".\res\Cmdbar.bmp"\
+	".\res\Hedge.ico"\
+	".\res\NillaHedge.ico"\
+	".\res\NillaHedge.rc2"\
+	{$(INCLUDE)}"wceres.rc"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\NillaHedge.rc : \
+	".\newres.h"\
+	".\res\Cmdbar.bmp"\
+	".\res\Hedge.ico"\
+	".\res\NillaHedge.ico"\
+	".\res\NillaHedge.rc2"\
+	{$(INCLUDE)}"wceres.rc"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\NillaHedge.rc : \
+	".\newres.h"\
+	".\res\Cmdbar.bmp"\
+	".\res\Hedge.ico"\
+	".\res\NillaHedge.ico"\
+	".\res\NillaHedge.rc2"\
+	{$(INCLUDE)}"wceres.rc"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\NillaHedge.rc : \
+	".\newres.h"\
+	".\res\Cmdbar.bmp"\
+	".\res\Hedge.ico"\
+	".\res\NillaHedge.ico"\
+	".\res\NillaHedge.rc2"\
+	{$(INCLUDE)}"wceres.rc"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\NillaHedgeDoc.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\NillaHedgeDoc.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\NillaHedgeDoc.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\NillaHedgeDoc.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\NillaHedgeView.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\NillaHedgeView.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\NillaHedgeView.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\NillaHedgeView.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\NillaHedgeView.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\Option.cpp : \
+	".\Bond.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\Option.cpp : \
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\Option.cpp : \
+	".\Option.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\Option.cpp : \
+	".\Bond.h"\
+	".\NillaHedge.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\OptionAnalyzerDialog.cpp : \
+	".\Bond.h"\
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\OptionAnalyzerDialog.cpp : \
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\OptionAnalyzerDialog.cpp : \
+	".\NillaDialog.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\OptionAnalyzerDialog.cpp : \
+	".\Bond.h"\
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionAnalyzerDialog.h"\
+	".\OptionDefinitionDialog.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\OptionDefinitionDialog.cpp : \
+	".\Bond.h"\
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionDefinitionDialog.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\OptionDefinitionDialog.cpp : \
+	".\NillaDialog.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionDefinitionDialog.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\OptionDefinitionDialog.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionDefinitionDialog.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\OptionDefinitionDialog.cpp : \
+	".\Bond.h"\
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\OptionDefinitionDialog.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\PortfolioNavigatorOptionsDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PortfolioNavigatorOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\PortfolioNavigatorOptionsDialog.cpp : \
+	".\PortfolioNavigatorOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\PortfolioNavigatorOptionsDialog.cpp : \
+	".\PortfolioNavigatorOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\PortfolioNavigatorOptionsDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PortfolioNavigatorOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\PortfolioOverviewDialog.cpp : \
+	".\BitArray.h"\
+	".\Bond.h"\
+	".\BOSDialog.h"\
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\PortfolioOverviewDialog.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\PortfolioOverviewDialog.cpp : \
+	".\PortfolioOverviewDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\PortfolioOverviewDialog.cpp : \
+	".\PortfolioOverviewDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\PortfolioOverviewDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PortfolioOverviewDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\Position.cpp : \
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\Position.cpp : \
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\Position.cpp : \
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\Position.cpp : \
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\PositionDisplayOptions.cpp : \
+	".\NillaHedge.h"\
+	".\PositionDisplayOptions.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\PositionDisplayOptions.cpp : \
+	".\NillaHedge.h"\
+	".\PositionDisplayOptions.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\PositionDisplayOptions.cpp : \
+	".\NillaHedge.h"\
+	".\PositionDisplayOptions.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\PositionDisplayOptions.cpp : \
+	".\NillaHedge.h"\
+	".\PositionDisplayOptions.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\PositionListOptionsDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PositionListOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\PositionListOptionsDialog.cpp : \
+	".\PositionListOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\PositionListOptionsDialog.cpp : \
+	".\PositionListOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\PositionListOptionsDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\PositionListOptionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\PositionsDialog.cpp : \
+	".\BitArray.h"\
+	".\Bond.h"\
+	".\BOSDialog.h"\
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionsDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\PositionsDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\PositionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\PositionsDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\PositionsDialog.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\PositionsDialog.cpp : \
+	".\BitArray.h"\
+	".\Bond.h"\
+	".\BOSDialog.h"\
+	".\BOSListCtrl.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\Option.h"\
+	".\Position.h"\
+	".\PositionDisplayOptions.h"\
+	".\PositionsDialog.h"\
+	".\RedBlackListCtrl.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\RedBlackListCtrl.cpp : \
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\RedBlackListCtrl.cpp : \
+	".\BitArray.h"\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\RedBlackListCtrl.cpp : \
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\RedBlackListCtrl.cpp : \
+	".\BitArray.h"\
+	".\NillaHedge.h"\
+	".\RedBlackListCtrl.h"\
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\ShortRateCalibration.cpp : \
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\ShortRateCalibration.cpp : \
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\ShortRateCalibration.cpp : \
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\ShortRateCalibration.cpp : \
+	".\Matrix.h"\
+	".\NillaHedge.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\SpotRateEstimatorDialog.cpp : \
+	".\BitArray.h"\
+	".\BOSDialog.h"\
+	".\Matrix.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\SpotRateEstimatorDialog.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\SpotRateEstimatorDialog.cpp : \
+	".\BitArray.h"\
+	".\Matrix.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\SpotRateEstimatorDialog.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\SpotRateEstimatorDialog.cpp : \
+	".\Matrix_f.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\SpotRateEstimatorDialog.h"\
+	".\StdAfx.h"\
+	".\Vector_f.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\SpotRateEstimatorDialog.cpp : \
+	".\BitArray.h"\
+	".\BOSDialog.h"\
+	".\Matrix.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\SpotRateEstimatorDialog.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\Stock.cpp : \
+	".\Bond.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\Stock.cpp : \
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\Stock.cpp : \
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\Stock.cpp : \
+	".\Bond.h"\
+	".\NillaHedge.h"\
+	".\Position.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\StockDefinitionDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\StockDefinitionDialog.cpp : \
+	".\NillaDialog.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\StockDefinitionDialog.cpp : \
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\StockDefinitionDialog.cpp : \
+	".\BOSDialog.h"\
+	".\NillaDialog.h"\
+	".\NillaHedge.h"\
+	".\NillaHedgeDoc.h"\
+	".\PositionDisplayOptions.h"\
+	".\ShortRateCalibration.h"\
+	".\StdAfx.h"\
+	".\Stock.h"\
+	".\StockDefinitionDialog.h"\
+	
+
+!ENDIF 
+
+!IF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Release"
+
+.\Vector.cpp : \
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE ARM) Debug"
+
+.\Vector.cpp : \
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Release"
+
+.\Vector.cpp : \
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ELSEIF  "$(CFG)" == "NillaHedge - Win32 (WCE x86) Debug"
+
+.\Vector.cpp : \
+	".\NillaHedge.h"\
+	".\StdAfx.h"\
+	".\Vector.h"\
+	
+
+!ENDIF 
+
