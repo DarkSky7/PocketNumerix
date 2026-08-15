@@ -1,0 +1,563 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="NillaHedge_OptionAnalyzer_files/filelist.xml">
+<link rel=Edit-Time-Data href="NillaHedge_OptionAnalyzer_files/editdata.mso">
+<link rel=OLE-Object-Data href="NillaHedge_OptionAnalyzer_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>NillaHedge - OptionAnalyzer</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="date"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Mike Landis</o:Author>
+  <o:LastAuthor>Mike</o:LastAuthor>
+  <o:Revision>8</o:Revision>
+  <o:TotalTime>177</o:TotalTime>
+  <o:Created>2007-08-13T21:09:00Z</o:Created>
+  <o:LastSaved>2007-08-14T23:39:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1674</o:Words>
+  <o:Characters>9546</o:Characters>
+  <o:Company>PocketNumerix</o:Company>
+  <o:Lines>79</o:Lines>
+  <o:Paragraphs>22</o:Paragraphs>
+  <o:CharactersWithSpaces>11198</o:CharactersWithSpaces>
+  <o:Version>10.6830</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>115</w:Zoom>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520078593 -1073717157 41 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Times New Roman";}
+h5
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	vertical-align:super;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="9218"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2><a name="_Toc107834062"></a><a name="_Toc107835292"></a><a
+name="_Toc114692979"><span style='mso-bookmark:_Toc107835292'><span
+style='mso-bookmark:_Toc107834062'><span style='mso-no-proof:yes'>Option
+Analyzer</span></span></span></a><span style='mso-no-proof:yes'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1078" type="#_x0000_t75" style='position:absolute;
+ margin-left:1103.5pt;margin-top:0;width:179.25pt;height:238.5pt;z-index:1;
+ mso-wrap-distance-left:7.2pt;mso-wrap-distance-top:7.2pt;
+ mso-wrap-distance-right:7.2pt;mso-wrap-distance-bottom:7.2pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionAnalyzer_files/image001.png" o:title=""/>
+ <w:wrap type="square" side="left"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1078" DrawAspect="Content" ObjectID="_1248625610">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=239 height=318
+src="NillaHedge_OptionAnalyzer_files/image002.jpg" align=right hspace=10
+vspace=10 v:shapes="_x0000_s1078"><![endif]>The Option Analyzer dialog enables
+you to experiment with values for the risk free rate, option price, stock
+price, and stock volatility to better understand an option’s sensitivity to changing
+market conditions.<span style='mso-spacerun:yes'>  </span>There is a subtle
+difference in the way that the Option Symbol combo-box works vs. how that
+control works in the Option Definition Dialog, so we’ll address that
+immediately.</p>
+
+<h3><a name="_Toc107834063">Option Symbol</a></h3>
+
+<p class=MsoNormal>The Option Symbol combo-box in an analyzer dialog doesn’t
+allow you to create a new symbol as you can do in the Option Definition
+Dialog.<span style='mso-spacerun:yes'>  </span>All you can do is select one of
+the preexisting option symbols.<span style='mso-spacerun:yes'>  </span>Given
+that, we decided to always load the first option symbol found, so you instantly
+have meaningful output to review when you open the Option Analyzer.</p>
+
+<h3><a name="_Toc107834064">Option Price</a></h3>
+
+<p class=MsoNormal>The Option Price edit box is a window on the database’s
+stored value for the option price.<span style='mso-spacerun:yes'>  </span>If
+you change the option price here, the new value will be saved in the option
+definition when you change option symbols or quit the dialog.<span
+style='mso-spacerun:yes'>  </span>If you have the appropriate save confirmation
+preferences enabled, either of those actions will cause a confirmation dialog
+to post asking permission to update the database.</p>
+
+<h3><a name="_Toc107834065">Expiry Date, Strike, Stock Symbol</a></h3>
+
+<p class=MsoNormal>Immediately below the Option Symbol combo-box, you can see
+several items that summarize the option definition.<span
+style='mso-spacerun:yes'>  </span>The expiration date, whether it’s a put or a
+call, the strike price, and the symbol of the underlying stock (surrounded by
+dashes).<span style='mso-spacerun:yes'>  </span>In the example above, we can
+see that ANQAE.X is a call option on Applied Materials Inc. (NYSE symbol =
+‘AMAT’), struck at 25.0, expiring on <st1:date Year="2008" Day="18" Month="1">18-Jan-2008</st1:date>.</p>
+
+<h3><a name="_Toc107834066">Volatility</a></h3>
+
+<p class=MsoNormal>The Stock Volatility edit box is a window on the database’s
+stored value for the underlying stock’s volatility.<span
+style='mso-spacerun:yes'>  </span>If you change the volatility here, the new
+value will be saved in the stock definition when you change option symbols or
+quit the dialog.<span style='mso-spacerun:yes'>  </span>If you have the
+appropriate save confirmation preferences enabled, either of those actions will
+cause a confirmation dialog to post asking permission to update the database.</p>
+
+<h3><a name="_Toc107834067">Stock Price</a></h3>
+
+<p class=MsoNormal>The Stock Price edit box is a window on the database’s
+stored value for the underlying stock’s market price.<span
+style='mso-spacerun:yes'>  </span>If you change the stock price here, the new
+value will be saved in the stock definition when you change option symbols or
+quit the dialog.<span style='mso-spacerun:yes'>  </span>If you have the
+appropriate save confirmation preferences enabled, either of those actions will
+cause a confirmation dialog to post asking permission to update the database.</p>
+
+<h3><a name="_Toc107834068">Risk Free Rate</a></h3>
+
+<p class=MsoNormal>The Risk Free Rate edit box displays the currently stored
+value for the risk free rate of interest.<span style='mso-spacerun:yes'> 
+</span>It’s expressed as a percentage with a default value of 3%; here 4.76% is
+used.<span style='mso-spacerun:yes'>  </span>The risk free rate can be computed
+in the YieldCurveFitter (a separate tool) or you can set it manually here.<span
+style='mso-spacerun:yes'>  </span>It’s a crucial quantity in valuing options,
+also used in numerous other NillaHedge tools.<span style='mso-spacerun:yes'> 
+</span>If you have created option positions and you want a realistic assessment
+of the value of those positions, you should always review and possibly modify
+the value of the risk free rate in the Option Analyzer, in one of the Explorer
+dialogs, or by using the Yield Curve Fitter prior to valuing any option
+positions.</p>
+
+<h3><a name="_Toc107834069">Black-Scholes Value</a></h3>
+
+<p class=MsoNormal>The Black-Scholes value is discussed in the Glossary, so we
+won’t review the details here – it’s an analytical solution to option valuation
+that accounts for the current price for the underlying stock, its volatility,
+and the risk free rate of interest.<span style='mso-spacerun:yes'>  </span>Variations
+on the theme account for discrete dividends or model dividends as a continuous
+yield.<span style='mso-spacerun:yes'>  </span>NillaHedge discounts the stock
+price with the present value of any dividends rather than resorting to a
+continuous yield approach.<span style='mso-spacerun:yes'>  </span>This seems to
+model market behavior more effectively than the continuous dividend yield
+model, especially for options with expirations less than one year.</p>
+
+<h3><a name="_Toc107834070">Implied Volatility</a></h3>
+
+<p class=MsoNormal>Implied volatility is defined in the Glossary, so we won’t
+delve deeply into it here, but briefly volatility represents the standard
+deviation of returns on the underlying stock over a year.<span
+style='mso-spacerun:yes'>  </span>Volatility is a crucial quantity used to
+assess option value and because of that role, it can be estimated given the
+other market conditions, namely the current value of the risk free rate, the
+current market price of the underlying stock, and the current market price of
+an option on that underlying stock.<span style='mso-spacerun:yes'> 
+</span>Volatility is best estimated using options which are at or near the
+money and not overly distant from expiration.<span style='mso-spacerun:yes'> 
+</span>Options that are far from the money and/or greater than a year from
+expiry tend to incorporate secondary risks not accounted for in nearer term,
+nearer the money options.<span style='mso-spacerun:yes'>  </span>Both
+situations usually result in pushing the implied volatility higher than stock
+returns warrant.<span style='mso-spacerun:yes'>  </span>It’s relatively rare to
+see a near term volatility higher than longer term volatilities.</p>
+
+<h3><a name="_Toc107834071">iV Pricing Error</a></h3>
+
+<p class=MsoNormal>Calculating implied volatility is an iterative process,
+which may fail to converge on a satisfactory solution.<span
+style='mso-spacerun:yes'>  </span>The degree to which a solution is
+satisfactory is given by the pricing error associated with the implied
+volatility.<span style='mso-spacerun:yes'>  </span>Ideally, this should be a
+vanishingly small number, as close to zero as possible.<span
+style='mso-spacerun:yes'>  </span>When the implied volatility pricing error is
+negative, it means that the implied volatility produced a market price lower
+than the specified market price for the option.<span style='mso-spacerun:yes'> 
+</span>Conversely, when iV pricing error is positive, it means that the implied
+volatility produced a market price above the specified market price.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>When the option is ‘rationally’ priced, implied volatility
+will generally converge and produce little or no pricing error.<span
+style='mso-spacerun:yes'>  </span>So pricing error can be an indication that
+options are incorrectly priced.<span style='mso-spacerun:yes'>  </span>The only
+way to know for sure is to look at the relationship between put and call prices
+at the same strike.<span style='mso-spacerun:yes'>  </span>The market is
+correctly pricing options when the following relationship holds: <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:72.75pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="NillaHedge_OptionAnalyzer_files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=97 height=19
+src="NillaHedge_OptionAnalyzer_files/image004.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1248625611">
+ </o:OLEObject>
+</xml><![endif]-->, or more accurately <sub><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:93.75pt;height:15.75pt' o:ole="">
+ <v:imagedata src="NillaHedge_OptionAnalyzer_files/image014.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=125 height=21
+src="NillaHedge_OptionAnalyzer_files/image006.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1248625612">
+ </o:OLEObject>
+</xml><![endif]-->, where <i style='mso-bidi-font-style:normal'>C</i> is the
+call price, <i style='mso-bidi-font-style:normal'>P</i> is the put price, <i
+style='mso-bidi-font-style:normal'>S</i> is the stock price, and <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:111.75pt;height:23.25pt'
+ o:ole="">
+ <v:imagedata src="NillaHedge_OptionAnalyzer_files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=149 height=31
+src="NillaHedge_OptionAnalyzer_files/image008.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1248625613">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>is the present value
+of the common strike of the put and the call, where <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:26.25pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="NillaHedge_OptionAnalyzer_files/image016.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=35 height=19
+src="NillaHedge_OptionAnalyzer_files/image010.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1248625614">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>is the time to expiry
+in years.<span style='mso-spacerun:yes'>  </span>A deviation from equality is
+an indication that an arbitrage opportunity exists.</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal>Unfortunately, irrational prices aren’t the only situation
+that might prevent convergence.<span style='mso-spacerun:yes'>  </span>When the
+time to expiry is relatively short and the option is at or near the money (the
+underlying stock price is very close to the option’s strike price) the
+volatility surface will be very steep, so implied volatility will have
+difficulty settling.<span style='mso-spacerun:yes'>  </span>The implied
+volatility calculator detects situations involving mispricing and instability
+and bails out early, indicating the smallest pricing error found among the
+volatilities tested.<span style='mso-spacerun:yes'>  </span>It doesn’t
+communicate why it bailed out, but if expiry isn’t near at hand and the option
+is not near the money, you should consider the possibility that the current
+option price represents an arbitrage opportunity.<span
+style='mso-spacerun:yes'>  </span>Black-Scholes isn’t a perfect model of market
+behavior – some researchers have estimated that options prices vs. their
+associated Black-Scholes value typically differ by 2% or more, but an implied
+volatility pricing error greater than that should definitely cast doubt on the
+implied volatility reported.<span style='mso-spacerun:yes'>  </span>We
+considered simply clearing the volatility or reporting “~” in these cases and
+not bothering to report the pricing error at all, but ultimately decided to
+keep the user in the loop, since the 2% figure itself is somewhat open to
+debate.</p>
+
+<h3><a name="_Toc107834072"></a><a name="_Toc107835293"><span style='mso-bookmark:
+_Toc107834072'>Black-Scholes Greeks</span></a></h3>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1079" type="#_x0000_t75"
+ style='position:absolute;margin-left:409.35pt;margin-top:0;width:180pt;
+ height:238.5pt;z-index:2;mso-wrap-distance-left:7.2pt;mso-wrap-distance-top:7.2pt;
+ mso-wrap-distance-right:7.2pt;mso-wrap-distance-bottom:7.2pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionAnalyzer_files/image011.png" o:title=""/>
+ <w:wrap type="square" side="left"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1079" DrawAspect="Content" ObjectID="_1248625615">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=240 height=318
+src="NillaHedge_OptionAnalyzer_files/image012.jpg" align=right hspace=10
+vspace=10 v:shapes="_x0000_s1079"><![endif]>Briefly, the Black-Scholes greeks
+indicate the option’s sensitivity to changes in the risk free rate (<i
+style='mso-bidi-font-style:normal'>rho</i>(<i style='mso-bidi-font-style:normal'>r</i>)),
+the passage of time (<i style='mso-bidi-font-style:normal'>theta</i>), as well
+as the underlying stock price (<i style='mso-bidi-font-style:normal'>delta</i>),
+dividends (<i style='mso-bidi-font-style:normal'>rho</i>(<i style='mso-bidi-font-style:
+normal'>D</i>)), and volatility (<i style='mso-bidi-font-style:normal'>vega</i>).<span
+style='mso-spacerun:yes'>  </span>Derivative information includes <i
+style='mso-bidi-font-style:normal'>gamma</i>, <i style='mso-bidi-font-style:
+normal'>elasticity</i>, and the probability of closing In-The-Money (<i
+style='mso-bidi-font-style:normal'>p</i>(<i style='mso-bidi-font-style:normal'>ITM</i>)).<span
+style='mso-spacerun:yes'>  </span>Each of the Black-Scholes greeks and derived
+quantities are discussed in the Glossary.</p>
+
+<h3>BS CheckBox</h3>
+
+<p class=MsoNormal>The BS (for Black-Scholes) check box in the lower left
+corner allows you to see what elasticity would be if scaled by the option’s
+market price (unchecked), rather than its Black-Scholes value (checked).<span
+style='mso-spacerun:yes'>  </span>It is always checked when the OptionAnalyzer
+is first posted since that represents the true expression for elasticity.<span
+style='mso-spacerun:yes'>  </span>In this example, the gap between market price
+and Black-Scholes value is substantial, so the elasticity also changes
+substantially.</p>
+
+<h3>Black-Scholes Shortcomings</h3>
+
+<p class=MsoNormal>It is quite unusual for such a large gap to exist between the
+market value and the Black-Scholes value for an option with only four months to
+expiry.<span style='mso-spacerun:yes'>  </span>In this example, you get the
+same valuation whether Applied Material’s $0.11 dividend (with ex-dividend date
+14 August 2007) is entered in the Stock Definition or not, but this is just one
+potential source of valuation error.<span style='mso-spacerun:yes'>  </span>We
+addressed volatility mispricing earlier – note that <i style='mso-bidi-font-style:
+normal'>vega</i> is substantial here, so under or over-estimating of the
+volatility in a small way will produce large deviations away from the option’s
+‘true’ market value.<span style='mso-spacerun:yes'>  </span>At this point in
+time, Applied Materials has almost doubled in price in twelve months, so
+opinions regarding its volatility tend to run towards the high side.</p>
+
+<h4>Early Exercise Premium</h4>
+
+<p class=MsoNormal>Another source of error is built into Black-Scholes itself –
+it derives from the fact that Black-Scholes assumes that options can only be
+converted to stock or cash on the option’s expiration date, so called European
+style options.<span style='mso-spacerun:yes'>  </span>In contrast, traded
+options generally allow for exercise on any date up to and including the
+expiration date, so called American style options.<span
+style='mso-spacerun:yes'>  </span>In efficient markets, it is generally
+suboptimal to early exercise a call, but puts on underlying stocks that don’t
+pay dividends can deviate sufficiently from the Black-Scholes value to make
+early exercise a good bet (capture profits now with relatively low risk of the
+underlying stock dropping further than the time value of money now invested
+elsewhere.<span style='mso-spacerun:yes'>  </span>Over a short period, this is
+likely to be a very small premium, but it grows with distance from expiry.<span
+style='mso-spacerun:yes'>  </span>Unfortunately, there is no closed form
+solution for the early exercise premium with an arbitrary exercise date.<span
+style='mso-spacerun:yes'>  </span>Closed form solutions exist for what are
+called Bermudan style options – options that can be exercised on one of several
+dates specified in the contract.<span style='mso-spacerun:yes'> 
+</span>Assessing the premium typically requires a multivariate combination of
+Bermudan valuations or a much more time consuming binomial expansion - a sort
+of discrete time approximation that produces better and better accuracy as the
+binomial tree populates price-time space.<span style='mso-spacerun:yes'> 
+</span>Trading firms with massive computer power evaluate as many as 10,000
+node binomial trees in order to accurately determine option value, including
+any early exercise premium.<span style='mso-spacerun:yes'>  </span>Therefore,
+it should not surprise you to find market prices in excess of the Black-Scholes
+value, but Black-Scholes establishes a very reasonable low water mark, what
+might be considered to be the option’s blue book value (assuming you got the
+volatility right).<span style='mso-spacerun:yes'>  </span>As you gain experience,
+you will get a sense for how the early exercise premium scales with time to
+expiry.</p>
+
+</div>
+
+</body>
+
+</html>
