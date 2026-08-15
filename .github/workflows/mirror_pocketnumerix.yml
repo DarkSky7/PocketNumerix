@@ -1,0 +1,22 @@
+name: Mirror PocketNumerix from SourceForge
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'True = list only, no uploads'
+        required: true
+        default: 'false'
+permissions:
+  contents: write
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stream SourceForge -> repo
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: |
+          python3 .github/scripts/stream_mirror.py
