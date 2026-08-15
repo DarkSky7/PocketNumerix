@@ -1,0 +1,564 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="NillaHedge_OptionChainRetriever_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="NillaHedge_OptionChainRetriever_files/editdata.mso">
+<link rel=OLE-Object-Data
+href="NillaHedge_OptionChainRetriever_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>NillaHedge - OptionChainRetriever</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Mike Landis</o:Author>
+  <o:LastAuthor>Mike Landis</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>16</o:TotalTime>
+  <o:Created>2005-10-08T10:22:00Z</o:Created>
+  <o:LastSaved>2005-10-08T10:22:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1153</o:Words>
+  <o:Characters>6574</o:Characters>
+  <o:Company>PocketNumerix</o:Company>
+  <o:Lines>54</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7712</o:CharactersWithSpaces>
+  <o:Version>10.6735</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>115</w:Zoom>
+  <w:DontDisplayPageBoundaries/>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Times New Roman";}
+h5
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	vertical-align:super;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1062" type="#_x0000_t75" style='position:absolute;
+ margin-left:309.2pt;margin-top:0;width:195.75pt;height:256.5pt;z-index:1;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionChainRetriever_files/image001.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1062" DrawAspect="Content" ObjectID="_1190254739">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=261 height=342
+src="NillaHedge_OptionChainRetriever_files/image002.jpg" align=right hspace=12
+vspace=5 v:shapes="_x0000_s1062"><![endif]><a name="_Toc114692969"></a><a
+name="_Toc107835295"></a><a name="_Toc107834082"><span style='mso-bookmark:
+_Toc107835295'><span style='mso-bookmark:_Toc114692969'><span style='mso-no-proof:
+yes'>Option Chain Retriever</span></span></span></a><span style='mso-no-proof:
+yes'><o:p></o:p></span></h1>
+
+<p class=MsoNormal>The Option Chain Retriever downloads option pricing and
+related information via the internet.<span style='mso-spacerun:yes'>  </span>It
+captures a chain of options expiring on a given date and loads up the Option
+Chain list control, one row for each option.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>It automatically updates the price of any option in your
+database found in a downloaded chain, but won’t create any new option
+definitions automatically.<span style='mso-spacerun:yes'>  </span>It’s very
+important to stick with exchange registered option symbols because the price
+update process doesn’t allow the user disapprove or otherwise bypass price
+updates.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The Option Chain Retriever will also silently update the
+price of the underlying stock, unless you set the Confirm Save Preferences to
+require user confirmation.<span style='mso-spacerun:yes'>  </span>If
+confirmation is required, the Option Chain Retriever will post a confirmation
+dialog before modifying the stock price.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The Option Chain Retriever is initialized with no stock
+symbol and both buttons disabled.<span style='mso-spacerun:yes'>  </span></p>
+
+<h2><a name="_Toc114692970"></a><a name="_Toc114692761"></a><a
+name="_Toc107834083"><span style='mso-bookmark:_Toc114692761'><span
+style='mso-bookmark:_Toc114692970'>Stock Symbol</span></span></a></h2>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1068" type="#_x0000_t75"
+ style='position:absolute;margin-left:523.25pt;margin-top:0;width:193.1pt;
+ height:34.35pt;z-index:7;mso-wrap-distance-top:3.6pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-vertical:top;mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionChainRetriever_files/image003.gif" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1068" DrawAspect="Content" ObjectID="_1190254740">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=46
+src="NillaHedge_OptionChainRetriever_files/image003.gif" align=right hspace=12
+vspace=5 v:shapes="_x0000_s1068"><![endif]>The Stock Symbol is a combo-box,
+supporting drop-down and <span class=GramE>edit</span> modes of input.<span
+style='mso-spacerun:yes'>  </span>You can either select the symbol for a stock
+you already have defined in the database via the drop-down box, or use the
+Input Panel to type a stock symbol not yet in your database.<span
+style='mso-spacerun:yes'>  </span>We entered ‘AMAT’ in the example at
+right.<span style='mso-spacerun:yes'>  </span>Once a symbol is available, the
+‘Fetch’ button becomes enabled.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Note:<span style='mso-spacerun:yes'>  </span>There is no
+local cache of valid stock <span class=GramE>exchange<span
+style='mso-spacerun:yes'>  </span>symbols</span> in <span class=SpellE>NillaHedge</span>
+- the server is the arbiter of validity for stock symbols.<span
+style='mso-spacerun:yes'>  </span>Since it takes a few seconds to hear back
+from the server, you’ll be more productive if you avoid fetching invalid
+symbols. </p>
+
+<h2><a name="_Toc114692971"></a><a name="_Toc114692762"></a><a
+name="_Toc107834084"><span style='mso-bookmark:_Toc114692762'><span
+style='mso-bookmark:_Toc114692971'>Fetch Button</span></span></a></h2>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1069" type="#_x0000_t75"
+ style='position:absolute;margin-left:523.25pt;margin-top:0;width:192.85pt;
+ height:17.4pt;z-index:8;mso-wrap-distance-top:3.6pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-vertical:top;mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionChainRetriever_files/image004.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1069" DrawAspect="Content" ObjectID="_1190254741">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=23
+src="NillaHedge_OptionChainRetriever_files/image005.jpg" align=right hspace=12
+vspace=5 v:shapes="_x0000_s1069"><![endif]>Once enabled, clicking the Fetch
+button will initiate a connection with the server to retrieve an option chain
+with the earliest possible expiration date for the company represented by the
+Stock Symbol.<span style='mso-spacerun:yes'>  </span>In the example above, we
+entered ‘AMAT’ to retrieve the options for Applied Materials Inc (whose <span
+class=SpellE><span class=GramE>Nasdaq</span></span> symbol is ‘AMAT’).<span
+style='mso-spacerun:yes'>  </span>The Fetch button is disabled as soon as the
+download is launched.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2><!--[if gte vml 1]><v:shape id="_x0000_s1066" type="#_x0000_t75" style='position:absolute;
+ margin-left:523.25pt;margin-top:0;width:191.8pt;height:252.65pt;z-index:5;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionChainRetriever_files/image006.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1066" DrawAspect="Content" ObjectID="_1190254742">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=256 height=337
+src="NillaHedge_OptionChainRetriever_files/image007.jpg" align=right hspace=12
+vspace=5 v:shapes="_x0000_s1066"><![endif]><a name="_Toc114692972"></a><a
+name="_Toc114692763"></a><a name="_Toc107834085"><span style='mso-bookmark:
+_Toc114692763'><span style='mso-bookmark:_Toc114692972'>Status Messages</span></span></a></h2>
+
+<p class=MsoNormal style='mso-pagination:lines-together'>After clicking the
+Fetch button, a series of messages will appear in the status line at the bottom
+of the dialog (to the left of the ‘Save to DB’ button).<span
+style='mso-spacerun:yes'>  </span>The first status message is ‘Opening
+Request…’ letting you know that progress is underway.<span
+style='mso-spacerun:yes'>  </span>Opening a request is a local operation and
+should complete very quickly.<span style='mso-spacerun:yes'>  </span>If this
+message is still around after more than a second, it’s likely that your
+internet connection is down.</p>
+
+<p class=MsoNormal style='mso-pagination:lines-together'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The second status message, ‘Sending Request…’ indicates that
+<span class=SpellE>NillaHedge</span> is attempting to negotiate a connection
+with the server.<span style='mso-spacerun:yes'>  </span>Obtaining an initial
+connection can sometimes take three to five seconds, depending on the quality
+of your internet connection and the demand on the server, but once a connection
+has been established, subsequent requests generally proceed with sub-second
+elapsed times.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The third status message, ‘Downloading…’ indicates that a
+connection has been successfully established and the data is currently being
+copied from the server onto the <span class=SpellE>PocketPC</span>.<span
+style='mso-spacerun:yes'>  </span>Downloading can also experience variations in
+completion times, from less than a second to a couple of seconds, depending on
+the speed and quality of your connection. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1067" type="#_x0000_t75"
+ style='position:absolute;margin-left:523.25pt;margin-top:0;width:193.1pt;
+ height:253.65pt;z-index:6;mso-wrap-distance-top:3.6pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-vertical:top;mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionChainRetriever_files/image008.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1067" DrawAspect="Content" ObjectID="_1190254743">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=338
+src="NillaHedge_OptionChainRetriever_files/image009.jpg" align=right hspace=12
+vspace=5 v:shapes="_x0000_s1067"><![endif]>The fourth status message,
+‘Extracting…’ occurs during the phase where the list control is being populated
+with the information just retrieved.<span style='mso-spacerun:yes'> 
+</span>Here, the total elapsed time is entirely dependent on how fast your
+processor is and how many options are contained in a single options chain.<span
+style='mso-spacerun:yes'>  </span>For a stock with a dozen options, the
+extracting phase completes almost instantaneously, but it may take a couple of
+seconds to populate the list control if there are hundreds of options in a
+single download. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>When the extraction phase completes, the status line
+indicates the number of puts and calls currently contained in the options list;
+the options list contains a row for each of the options found, the stock price
+and company name are displayed below ‘Stock Symbol’; and the Expiry combo-box
+has been loaded with all known expiration dates for options on the specified
+stock symbol.</p>
+
+<h2><a name="_Toc114692973"></a><a name="_Toc114692764"></a><a
+name="_Toc107834086"><span style='mso-bookmark:_Toc114692764'><span
+style='mso-bookmark:_Toc114692973'>Stock Price and Company Name</span></span></a></h2>
+
+<p class=MsoNormal>The first result of extraction is the display of the company
+name and the current stock price associated with the symbol you requested
+options for.<span style='mso-spacerun:yes'>  </span>There’s nothing magical
+here.<span style='mso-spacerun:yes'>  </span>The stock price is delayed by
+about fifteen minutes from the current market.<span style='mso-spacerun:yes'> 
+</span>The company name is provided so you can verify that you received what
+you intended to retrieve.</p>
+
+<h2><!--[if gte vml 1]><v:shape id="_x0000_s1063" type="#_x0000_t75" style='position:absolute;
+ margin-left:523.25pt;margin-top:0;width:41.9pt;height:78.55pt;z-index:2;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionChainRetriever_files/image010.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1063" DrawAspect="Content" ObjectID="_1190254744">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=56 height=105
+src="NillaHedge_OptionChainRetriever_files/image011.jpg" align=right hspace=12
+vspace=5 v:shapes="_x0000_s1063"><![endif]><a name="_Toc114692974"></a><a
+name="_Toc114692765"></a><a name="_Toc107834087"><span style='mso-bookmark:
+_Toc114692765'><span style='mso-bookmark:_Toc114692974'>Expiry Dates</span></span></a></h2>
+
+<p class=MsoNormal>The next result of a successful download is that the Expiry
+combo-box is loaded with the known expiration months for options on the
+specified stock.<span style='mso-spacerun:yes'>  </span>Immediately after
+download, the Expiry combo-box displays the nearest term expiration date
+available.<span style='mso-spacerun:yes'>  </span>Subsequent expiration dates
+can be found in its drop-down box.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The Expiry combo-box serves two purposes.<span
+style='mso-spacerun:yes'>  </span>If you select a date for which you have
+previously downloaded options, the Expiry combo-box will restore the original
+sort order (if it has been modified) and scroll the options list so the first option
+matching the selected expiration date occupies the first row of the options
+list.</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal>If you select a date for which you have not previously
+downloaded options, the Expiry combo-box will just enable the Fetch button,
+enabling you to retrieve options with that expiration date into the options
+list.</p>
+
+<h2><!--[if gte vml 1]><v:shape id="_x0000_s1065" type="#_x0000_t75" style='position:absolute;
+ margin-left:523.25pt;margin-top:0;width:193.1pt;height:252.65pt;z-index:4;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionChainRetriever_files/image012.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1065" DrawAspect="Content" ObjectID="_1190254745">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=337
+src="NillaHedge_OptionChainRetriever_files/image013.jpg" align=right hspace=12
+vspace=5 v:shapes="_x0000_s1065"><![endif]><a name="_Toc114692975"></a><a
+name="_Toc114692766"></a><a name="_Toc107834088"><span style='mso-bookmark:
+_Toc114692766'><span style='mso-bookmark:_Toc114692975'>Option Chain List
+Control</span></span></a></h2>
+
+<p class=MsoNormal>The primary result of extraction is an option chain
+populating the central list control with columns indicating whether the option
+is a put or a call; its strike price; expiration month; option symbol; a set of
+prices (or derivative numbers): Last, Change, Bid, Ask; Volume, and the Opening
+Interest in the issue.</p>
+
+<h3>Highlight Color</h3>
+
+<p class=MsoNormal>Rows in the options list are color coded to indicate whether
+the option is a put or a call (making the first column redundant).<span
+style='mso-spacerun:yes'>  </span>Puts are highlighted in plum, while Calls are
+highlighted in cyan.</p>
+
+<h3>Column Sorting</h3>
+
+<p class=MsoNormal>All of the column headers act as sort buttons on the
+column.<span style='mso-spacerun:yes'>  </span>The first click is an ascending <span
+class=GramE>sort,</span> the second produces a descending sort.<span
+style='mso-spacerun:yes'>  </span>The result of an ascending sort on Strike
+price is shown at right.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>After sorting, it may be desirable to return to the original
+sort order.<span style='mso-spacerun:yes'>  </span>Since there’s nothing
+intrinsic about the option pricing data that would allow a sort on the data
+that would restore the original order, the original sort order is hidden in the
+empty column after the Opening Interest column.<span style='mso-spacerun:yes'> 
+</span>Its column header button (only about two characters wide) is blank, but
+it sorts using the list control’s original sort order.</p>
+
+<h2><!--[if gte vml 1]><v:shape id="_x0000_s1064" type="#_x0000_t75" style='position:absolute;
+ margin-left:311.85pt;margin-top:0;width:193.1pt;height:252.65pt;z-index:3;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_OptionChainRetriever_files/image014.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1064" DrawAspect="Content" ObjectID="_1190254746">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=337
+src="NillaHedge_OptionChainRetriever_files/image015.jpg" align=right hspace=12
+vspace=5 v:shapes="_x0000_s1064"><![endif]><a name="_Toc114692976"></a><a
+name="_Toc114692767"></a><a name="_Toc107834089"><span style='mso-bookmark:
+_Toc114692767'><span style='mso-bookmark:_Toc114692976'>Save to Database</span></span></a></h2>
+
+<p class=MsoNormal>The ‘Save to DB’ Button is enabled whenever one or more rows
+are selected, even if the selected row doesn’t currently appear within the
+viewable area, i.e. when you select a row and subsequently scroll the window.<span
+style='mso-spacerun:yes'>  </span>You can click, drag, and release to select a
+screen full at a time, or if you use a real or the <span class=SpellE>builtin</span>
+soft keyboard, you can use shift-click and control-click to add or subtract
+rows from the selected list.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>When you click ‘Save to DB’, the selected options are
+immediately saved to the database.<span style='mso-spacerun:yes'> 
+</span>Shortly thereafter, the rows will automatically be deselected,
+indicating completion of the operation.<span style='mso-spacerun:yes'>  </span>When
+the rows are deselected, the ‘Save to DB’ button will be disabled too.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The option definitions saved will be complete, even if you
+haven’t previously defined the underlying stock in your database.<span
+style='mso-spacerun:yes'>  </span>But if that is the case, the stock will not
+have dividends defined and it will have a default value for the stock’s
+volatility.<span style='mso-spacerun:yes'>  </span>It’s wise to set dividends
+to accurate values because they affect the value of options drawn on that
+underlying, as well as all of the income calculations in the positions dialogs
+and the positions transcript.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
