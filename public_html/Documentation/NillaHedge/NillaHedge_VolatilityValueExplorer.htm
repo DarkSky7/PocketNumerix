@@ -1,0 +1,771 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="NillaHedge_VolatilityValueExplorer_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="NillaHedge_VolatilityValueExplorer_files/editdata.mso">
+<link rel=OLE-Object-Data
+href="NillaHedge_VolatilityValueExplorer_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>NillaHedge - VolatilityValueExplorer</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Mike Landis</o:Author>
+  <o:LastAuthor>Mike</o:LastAuthor>
+  <o:Revision>11</o:Revision>
+  <o:TotalTime>2971</o:TotalTime>
+  <o:Created>2005-10-08T10:36:00Z</o:Created>
+  <o:LastSaved>2007-07-13T02:38:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1709</o:Words>
+  <o:Characters>9747</o:Characters>
+  <o:Company>PocketNumerix</o:Company>
+  <o:Lines>81</o:Lines>
+  <o:Paragraphs>22</o:Paragraphs>
+  <o:CharactersWithSpaces>11434</o:CharactersWithSpaces>
+  <o:Version>10.6830</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:ApplyBreakingRules/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Times New Roman";}
+h5
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	vertical-align:super;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="11266"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1083" type="#_x0000_t75" style='position:absolute;
+ margin-left:1901.15pt;margin-top:0;width:193.1pt;height:252.65pt;z-index:2;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image001.png"
+  o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1083" DrawAspect="Content" ObjectID="_1245785107">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=337
+src="NillaHedge_VolatilityValueExplorer_files/image003.jpg" align=right
+hspace=12 vspace=5 v:shapes="_x0000_s1083"><![endif]><a name="_Toc114692984"><span
+style='mso-no-proof:yes'>Volatility-Value Explorer</span></a><span
+style='mso-no-proof:yes'><o:p></o:p></span></h2>
+
+<p class=MsoNormal>The Volatility-Value Explorer provides a graphical view of
+the relative sensitivity of options to their underlying stock’s
+volatility.<span style='mso-spacerun:yes'>  </span>Up to four options can be
+compared simultaneously.<span style='mso-spacerun:yes'>  </span>The Volatility-Value
+Explorer has two modes of operation (really just ways to scale the Y-values),
+pure Black-<span class=SpellE>Scholes</span> and market price relative.<span
+style='mso-spacerun:yes'>  </span>In Pure Black-<span class=SpellE>Scholes</span>
+mode, the option’s current market price is ignored - only the risk free rate
+and the underlying stock’s price and volatility influence the plots.<span
+style='mso-spacerun:yes'>  </span>When the Pure B-S check box is unchecked, the
+option’s last known market price becomes the reference against which imputed
+option prices are scaled.</p>
+
+<h3>The Plot</h3>
+
+<p class=MsoNormal>The first thing to remember about volatility-value plots is
+that both axes depict <i style='mso-bidi-font-style:normal'>ratios</i>, not
+volatilities, option value, or percentages thereof.<span
+style='mso-spacerun:yes'>  </span>The horizontal axis depicts the ratio of
+experimental volatility to the current volatility for the option’s underlying
+stock, so <sub><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
+ style='width:26.25pt;height:14.25pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image002.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=35 height=19
+src="NillaHedge_VolatilityValueExplorer_files/image005.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1245785108">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>represents the
+currently stored volatility for the underlying stock.<span
+style='mso-spacerun:yes'>  </span>The vertical axis similarly depicts the ratio
+of the imputed Black-<span class=SpellE>Scholes</span> value to the option’s
+last known market price or its Black-<span class=SpellE>Scholes</span> value
+(depending on the state of the Pure B-S checkbox), so <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:26.25pt;height:15.75pt'
+ o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image004.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=35 height=21
+src="NillaHedge_VolatilityValueExplorer_files/image013.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1245785109">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>represents the
+option’s relative value at a given relative volatility.</p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1084" type="#_x0000_t75"
+ style='position:absolute;margin-left:1442.6pt;margin-top:0;width:193.1pt;
+ height:252.65pt;z-index:3;mso-wrap-distance-top:3.6pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-vertical:top;mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image007.png"
+  o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1084" DrawAspect="Content" ObjectID="_1245785110">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=337
+src="NillaHedge_VolatilityValueExplorer_files/image022.jpg" align=right
+hspace=12 vspace=5 v:shapes="_x0000_s1084"><![endif]></p>
+
+<p class=MsoNormal>The colors assigned to option symbols are red, green, blue,
+and purple ordered from topmost symbol to bottom (e.g. VPJMB.X – red, VPJAX.X –
+green, etc.).<span style='mso-spacerun:yes'>  </span>When option positions
+exist in the database, the Portfolio checkbox will be enabled.<span
+style='mso-spacerun:yes'>  </span>When checked, a black line depicts the
+volatility-value curve for the current option portfolio with each option’s
+contribution weighted by the cost of the associated positions (refer to the
+screenshot below).</p>
+
+<h3>Plot Enabling Checkboxes</h3>
+
+<p class=MsoNormal>The checkboxes on the right side of the dialog
+enable/disable plotting the volatility-value for the option symbol immediately
+to its left.<span style='mso-spacerun:yes'>  </span>When options produce very
+high value-volatility ratios while others are less responsive, it can be
+difficult to assess the behavior of the low ratio options.<span
+style='mso-spacerun:yes'>  </span>In that case, you can disable (uncheck) the
+high ratio options, triggering the plot to re-scale to accommodate the
+remaining curves, thus providing more insight into the low ratio options’
+behavior.<span style='mso-spacerun:yes'>  </span>Compare the first
+Volatility-Value Explorer plot with the one at right.</p>
+
+<h3>Pure Black-<span class=SpellE>Scholes</span> mode</h3>
+
+<p class=MsoNormal>When Pure B-S is checked, the plot <!--[if gte vml 1]><v:shape
+ id="_x0000_s1082" type="#_x0000_t75" style='position:absolute;margin-left:1062.6pt;
+ margin-top:0;width:191.8pt;height:252.65pt;z-index:1;mso-wrap-distance-top:3.6pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-horizontal-relative:text;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image009.png"
+  o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1082" DrawAspect="Content" ObjectID="_1245785111">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=256 height=337
+src="NillaHedge_VolatilityValueExplorer_files/image044.jpg" align=right
+hspace=12 vspace=5 v:shapes="_x0000_s1082"><![endif]>represents the imputed
+option value divided by the Black-<span class=SpellE>Scholes</span> value at
+the reference (underlying stock’s stored) volatility, consequently the
+volatility-value curves all pass <span class=GramE>through </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:60.75pt;height:15.75pt'
+ o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image006.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=81 height=21
+src="NillaHedge_VolatilityValueExplorer_files/image045.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1245785112">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-spacerun:yes'>  </span>In market price mode
+(Pure B-S is unchecked), the Y-values in the plot represent the imputed option
+values divided by the option’s stored market price, so the volatility-value
+curve can pass above or below <sub><!--[if gte vml 1]><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:24pt;height:15.75pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image008.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=32 height=21
+src="NillaHedge_VolatilityValueExplorer_files/image046.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1245785113">
+ </o:OLEObject>
+</xml><![endif]-->.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>All things being equal, a premium option, whose currently
+stored market price exceeds its Black-<span class=SpellE>Scholes</span> value
+at the currently stored volatility, will pass below <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:24pt;height:15.75pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image010.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=32 height=21
+src="NillaHedge_VolatilityValueExplorer_files/image046.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1245785114">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>as VPJMB.X (red) does
+in the screenshot at right.<span style='mso-spacerun:yes'>  </span>Conversely,
+a bargain option, whose Black-<span class=SpellE>Scholes</span> value at the
+currently stored volatility is greater than the option’s currently stored
+market price will pass above <sub><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+ type="#_x0000_t75" style='width:24pt;height:15.75pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image010.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=32 height=21
+src="NillaHedge_VolatilityValueExplorer_files/image046.gif" v:shapes="_x0000_i1030"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1245785115">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>as VPJAE.X (purple)
+does.</p>
+
+<h3>Portfolio</h3>
+
+<p class=MsoNormal>The Portfolio check box enables you to see how your entire
+option portfolio is positioned with respect to volatility risk relative to the
+currently stored volatility for the underlying stock.<span
+style='mso-spacerun:yes'>  </span>The Volatility-Value Explorer plots a curve
+which sums all option positions in your portfolio, each option’s contribution
+to the volatility-value curve being weighted by the cost of the position
+relative to the total cost of the option positions in the portfolio.<span
+style='mso-spacerun:yes'>  </span>It’s unchecked at right to better show the
+volatility-value curves for ANQAM.X and VPJAX.X.</p>
+
+<h3><!--[if gte vml 1]><v:shape id="_x0000_s1085" type="#_x0000_t75" style='position:absolute;
+ margin-left:1442.6pt;margin-top:0;width:193.1pt;height:252.65pt;z-index:4;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image016.png"
+  o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1085" DrawAspect="Content" ObjectID="_1245785116">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=337
+src="NillaHedge_VolatilityValueExplorer_files/image047.jpg" align=right
+hspace=12 vspace=5 v:shapes="_x0000_s1085"><![endif]>Evaluation Date</h3>
+
+<p class=MsoNormal>The Evaluation Date picker defaults to the current date, but
+can be set earlier or later to review how current parameters would affect
+volatility-value in the past or future.</p>
+
+<h3>Risk Free Rate</h3>
+
+<p class=MsoNormal>The Risk Free Rate edit box displays the currently stored
+value for the risk free rate.<span style='mso-spacerun:yes'>  </span>It’s expressed
+as a percentage with a default value of 3%.</p>
+
+<h3>Volatility Risk</h3>
+
+<p class=MsoNormal>Volatility risk has been a key factor in the financial
+difficulties at Barings Bank and at Long Term Capital Management, so it’s an
+issue of very real concern to professional portfolio managers.<span
+style='mso-spacerun:yes'>  </span>Accurately hedging against volatility risk is
+a complex topic beyond the scope of <span class=SpellE>NillaHedge</span> and
+this documentation, but the Volatility-Value Explorer does help you to quantify
+relative volatility risk, enabling you to make more informed choices.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The thing to remember about using the Volatility-Value
+Explorer is that is depicts what happens to option prices as a function of
+relatively heavy-handed modifications to the underlying stock’s
+volatility.<span style='mso-spacerun:yes'>  </span>An assumption in analyses of
+this sort is that the reference volatility is ‘reasonable,’ but it becomes a
+critical assumption when attempting to assess relative volatility risk between
+options not drawn on the same underlying stock.</p>
+
+<h4><!--[if gte vml 1]><v:shape id="_x0000_s1088" type="#_x0000_t75" style='position:absolute;
+ margin-left:1534.55pt;margin-top:0;width:191.8pt;height:252pt;z-index:7;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image018.png"
+  o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1088" DrawAspect="Content" ObjectID="_1245785117">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=256 height=336
+src="NillaHedge_VolatilityValueExplorer_files/image048.jpg" align=right
+hspace=12 vspace=5 v:shapes="_x0000_s1088"><![endif]>The Volatility Smile</h4>
+
+<p class=MsoNormal>If you are not already familiar with the volatility smile,
+it is a curve that results from plotting implied volatilities against strike
+price, with implied volatility increasing as the strike distances itself from
+the underlying stock price.<span style='mso-spacerun:yes'>  </span>In fact, the
+smile is really a surface.<span style='mso-spacerun:yes'>  </span>If you
+examine implied volatility versus time to maturity, you will note a similar
+effect.<span style='mso-spacerun:yes'>  </span>Part of the reason for
+non-constant implied volatility is that Black-<span class=SpellE>Scholes</span>
+theory assumes that stock returns are <span class=SpellE>lognormally</span>
+distributed, which means that the natural logarithm of stock returns is
+normally distributed.<span style='mso-spacerun:yes'>  </span>The lognormal
+assumption is attractive because it’s close to reality and analytically
+tractable, but historical returns show that the actual distribution has
+somewhat fatter tails and a higher peak at the mean.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>So, volatility risk intuition is potentially clouded by the
+volatility smile and our imperfect understanding of how to compare apples and
+oranges, e.g. AMAT to INTC, etc.<span style='mso-spacerun:yes'>  </span>Both
+potential problems are ameliorated by scoping your comparisons to options in
+the same neighborhood with respect to expiration and <span class=SpellE>moneyness</span>
+(degree to which the underlying stock’s price is into the option’s profitable
+zone).</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>After using the Volatility-Value Explorer for a few minutes,
+you’ll surely notice that low value, high implied volatility options are much
+more likely to produce high option price ratios for a given multiple of
+volatility than those with higher intrinsic value, as illustrated by VPJMB.X in
+the previous four screenshots.<span style='mso-spacerun:yes'>  </span>VPJMB.X
+is a Jan-07 Put with a $10 strike selling for $0.15 while its underlying stock
+(AMAT) has a market value of $17.97.</p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1086" type="#_x0000_t75"
+ style='position:absolute;margin-left:1542.35pt;margin-top:0;width:193.1pt;
+ height:252.65pt;z-index:5;mso-wrap-distance-top:3.6pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-vertical:top;mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image020.png"
+  o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1086" DrawAspect="Content" ObjectID="_1245785118">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=337
+src="NillaHedge_VolatilityValueExplorer_files/image049.jpg" align=right
+hspace=12 vspace=5 v:shapes="_x0000_s1086"><![endif]></p>
+
+<p class=MsoNormal>It’s wise to review the volatilities assigned to stocks
+underlying any options of interest before comparing the volatility-value ratios
+of the associated options.<span style='mso-spacerun:yes'>  </span>Without
+venturing outside of the family of options on Applied Materials (AMAT), note
+that the second pair of plots in the Volatility-Value Explorer section used a
+reference volatility of 0.231 (nearly <span class=SpellE>VPJAE.X’s</span>
+implied volatility), causing VPJMB.X (red) to appear to be selling at a high
+premium and producing vastly different volatility-value ratios in Pure B-S and
+market price modes.<span style='mso-spacerun:yes'>  </span>In the next pair of
+plots in this section, the reference volatility is the implied volatility for
+VPJMB.X (<sub><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:56.25pt;height:14.25pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image011.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=75 height=19
+src="NillaHedge_VolatilityValueExplorer_files/image050.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1245785119">
+ </o:OLEObject>
+</xml><![endif]-->), so VPJMB.X now passes through <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:24pt;height:15.75pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image008.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=32 height=21
+src="NillaHedge_VolatilityValueExplorer_files/image046.gif" v:shapes="_x0000_i1032"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1245785120">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>in market price mode
+and behaves identically in both modes.<span style='mso-spacerun:yes'> 
+</span>Unfortunately, VPJAE.X (purple) now appears to be a bargain option, demonstrating
+a similar <span class=SpellE>Jekyl</span>-Hyde schizophrenia when switching
+between Pure B-S and market price modes because it feels <span class=SpellE>mispriced</span>.<span
+style='mso-spacerun:yes'>  </span>You may also note that VPJAX.X (implied <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:57pt;height:14.25pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image012.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=76 height=19
+src="NillaHedge_VolatilityValueExplorer_files/image051.gif" v:shapes="_x0000_i1033"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1245785121">
+ </o:OLEObject>
+</xml><![endif]-->), which previously passed near <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:24pt;height:15.75pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image008.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=32 height=21
+src="NillaHedge_VolatilityValueExplorer_files/image046.gif" v:shapes="_x0000_i1034"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1245785122">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>now appears to be a
+bargain option because the reference volatility is so much higher than its
+implied volatility.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Alternatively, in the plot below right, we have four puts
+all expiring in Oct05 with ANQVR.X (implied <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:51pt;height:14.25pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image014.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=68 height=19
+src="NillaHedge_VolatilityValueExplorer_files/image052.gif" v:shapes="_x0000_i1035"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1245785123">
+ </o:OLEObject>
+</xml><![endif]-->) struck out-of-the-money at $17, ANQVS.X (implied <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:57pt;height:14.25pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image017.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=76 height=19
+src="NillaHedge_VolatilityValueExplorer_files/image053.gif" v:shapes="_x0000_i1036"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1245785124">
+ </o:OLEObject>
+</xml><![endif]-->) struck slightly in-the-money at $18, ANQVT (implied <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:51pt;height:14.25pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image019.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=68 height=19
+src="NillaHedge_VolatilityValueExplorer_files/image054.gif" v:shapes="_x0000_i1037"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1245785125">
+ </o:OLEObject>
+</xml><![endif]-->) struck at $19, and ANQVD.X (implied <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:51pt;height:14.25pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image021.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=68 height=19
+src="NillaHedge_VolatilityValueExplorer_files/image059.gif" v:shapes="_x0000_i1038"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1245785126">
+ </o:OLEObject>
+</xml><![endif]-->) struck at $20, while AMAT has a market value of
+$17.83.<span style='mso-spacerun:yes'>  </span><!--[if gte vml 1]><v:shape
+ id="_x0000_s1087" type="#_x0000_t75" style='position:absolute;margin-left:1901.15pt;
+ margin-top:0;width:193.1pt;height:252.65pt;z-index:6;mso-wrap-distance-top:3.6pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-horizontal-relative:text;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image034.png"
+  o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="MSPhotoEd.3"
+ ShapeID="_x0000_s1087" DrawAspect="Content" ObjectID="_1245785127">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=257 height=337
+src="NillaHedge_VolatilityValueExplorer_files/image060.jpg" align=right
+hspace=12 vspace=5 v:shapes="_x0000_s1087"><![endif]>Certainly, we’ve come to
+expect that out-of-the-money options exhibit higher volatility sensitivity, but
+since I mentioned them, the question you might really want to ask is “What’s up
+with <span class=SpellE>ANQVD.X’s</span> implied volatility?”<span
+style='mso-spacerun:yes'>  </span>The first thing of note is its extremely low <span
+class=SpellE><i style='mso-bidi-font-style:normal'>vega</i></span> = 0.0011,
+while its temporal brethren have <span class=SpellE><i style='mso-bidi-font-style:
+normal'>vega</i>s</span> on the interval [1.78 .. 2.29), but perhaps more to
+the point, its <i style='mso-bidi-font-style:normal'>delta</i> = -1.0 and
+consequently its probability of closing in-the-money is 100%, meaning that
+other factor sensitivities, including volatility, are not particularly
+influential at the current stock price.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>One conclusion you might draw from the foregoing discussion
+is that you should always have a good understanding of what you’re looking at
+in the Volatility-Value Explorer, but I hope the walk away benefit will be your
+recognition of the degree to which volatility can drive option value, so you
+won’t enter positions without assessing the risks and grappling with the model
+parameters beforehand.</p>
+
+<h4>Compensating Volatilities</h4>
+
+<p class=MsoNormal>One technique that partially compensates for inaccuracies
+introduced by the lognormal assumption is to use an Exponentially Weighted
+Moving Average (EWMA) to compute the underlying stock trend and
+volatility.<span style='mso-spacerun:yes'>  </span>J.P. Morgan’s <span
+class=SpellE>RiskMetrics</span> group produces well regarded Value-at-Risk
+assessments using lognormal models in conjunction with EWMA volatilities.<span
+style='mso-spacerun:yes'>  </span>In <a
+href="http://www.riskmetrics.com/pdf/RMGuide.pdf">Risk Management, A Practical
+Guide</a>, Alan <span class=SpellE>Laubsch</span> recommends using decay <span
+class=GramE>factor </span><span style='position:relative;top:3.0pt;mso-text-raise:
+-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1039" type="#_x0000_t75"
+ style='width:51pt;height:16.5pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image023.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=68 height=22
+src="NillaHedge_VolatilityValueExplorer_files/image061.gif" v:shapes="_x0000_i1039"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1245785128">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-spacerun:yes'>  </span>Using that decay
+factor, 75 trading days (105 calendar days) capture 99% of an exponentially
+weighted average, so the usual recommendation is to collect 80 trading days
+(112 calendar days) of stock returns.<span style='mso-spacerun:yes'> 
+</span>On-line sources leave something to be desired in this realm, but Carol
+Alexander’s (2001) <u>Market Models</u> provides very accessible coverage of
+volatility, exponentially weighted moving averages, and other models used in
+portfolio management, without sacrificing any details.<span
+style='mso-spacerun:yes'>  </span>Given a set of daily returns, the volatility
+at time <i style='mso-bidi-font-style:normal'>t</i> (<span style='position:
+relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1044"
+ type="#_x0000_t75" style='width:21.75pt;height:27pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image024.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=29 height=36
+src="NillaHedge_VolatilityValueExplorer_files/image025.gif" v:shapes="_x0000_i1044"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1245785129">
+ </o:OLEObject>
+</xml><![endif]-->) is given by<span class=GramE>:<span
+style='mso-spacerun:yes'>  </span></span><sub><span style='position:relative;
+top:16.0pt;mso-text-raise:-16.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1042"
+ type="#_x0000_t75" style='width:167.25pt;height:56.25pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image026.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=223 height=75
+src="NillaHedge_VolatilityValueExplorer_files/image027.gif" v:shapes="_x0000_i1042"><![endif]></span></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1245785130">
+ </o:OLEObject>
+</xml><![endif]-->, where <span style='position:relative;top:7.0pt;mso-text-raise:
+-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1043" type="#_x0000_t75"
+ style='width:25.5pt;height:27.75pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image028.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=34 height=37
+src="NillaHedge_VolatilityValueExplorer_files/image029.gif" v:shapes="_x0000_i1043"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1245785131">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>are the daily
+returns.<span style='mso-spacerun:yes'>  </span>Nobody has an infinite supply
+of daily returns, but <span class=GramE>with </span><span style='position:relative;
+top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1040"
+ type="#_x0000_t75" style='width:51pt;height:16.5pt' o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image023.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=68 height=22
+src="NillaHedge_VolatilityValueExplorer_files/image061.gif" v:shapes="_x0000_i1040"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1245785133">
+ </o:OLEObject>
+</xml><![endif]-->, the influence of four month and older stock returns have
+negligible influence on the value of the sum anyway.<span
+style='mso-spacerun:yes'>  </span>After establishing a starting point EWMA
+estimate of the historical volatility, you can adopt a recursive model, e.g. <sub><span
+style='position:relative;top:8.0pt;mso-text-raise:-8.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" style='width:170.25pt;height:34.5pt'
+ o:ole="">
+ <v:imagedata src="NillaHedge_VolatilityValueExplorer_files/image031.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=227 height=46
+src="NillaHedge_VolatilityValueExplorer_files/image033.gif" v:shapes="_x0000_i1041"><![endif]></span></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1245785134">
+ </o:OLEObject>
+</xml><![endif]-->. Such EWMA volatilities partially compensate for the
+mismatch between actual stock returns and lognormal models, and the testimonial
+is how extensively <span class=SpellE>RiskMetrics</span>’ approach is used by
+banks to model their portfolio risk and compute reserve requirements.<span
+style='mso-spacerun:yes'>  </span>If you plan to use a volatility that differs
+markedly from the <span class=SpellE>RiskMetrics</span>’ model discussed here,
+you should know why. </p>
+
+<p class=MsoNormal style='tab-stops:135.0pt'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
